@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="mk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="dropdown.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <title>Авторски права</title>
+    </head>
+    <body>
+        <div class="header-div"></div>
+        <div class="mobile-header">
+            <a href="index.html"><img class="logo" src="./img/logo.webp" alt="Logoto na vebsajtot"></a>
+            <img src="./img/icon_burger.webp" alt="" style="width: 30px; height: fit-content;" onclick="openBurger()">
+        </div>
+        <div id="menu" style="display: none;">
+            <img src="./img/icon_x.webp" alt="" style="width: 20px; height: fit-content;" onclick="closeBurger()">
+            <div class="menu-nav">
+                <a href="index.html">Дома</a>
+                <a href="np-pelister.html">НП Пелистер</a>
+                <a href="np-mavrovo.html">НП Маврово</a>
+                <a href="np-galicica.html">НП Галичица</a>
+                <a href="np-sarplanina.html">НП Шар Планина</a>
+                <a href="aktivnosti.html">Активности</a>
+                <a href="prestoj.html">Престој</a>
+                <a href="pravila-na-odnesuvanje.html">Правила на<br> однесување</a>
+                <div class="menu-flag">
+                    <a href=""><div class="flag-1"></div></a>
+                    <a href=""><div class="flag-2"></div></a>
+                    <a href=""><div class="flag-3"></div></a>
+                </div>
+            </div>
+        </div>
+        <header>
+            <a href="index.html"><img class="logo" src="./img/logo.webp" alt="Logoto na vebsajtot"></a>
+            <nav class="header-nav">
+                <a href="index.html">Дома</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">Паркови ▼</button>
+                    <div id="myDropdown" class="drop-content">
+                        <a href="np-pelister.html">НП Пелистер</a>
+                        <a href="np-mavrovo.html">НП Маврово</a>
+                        <a href="np-galicica.html">НП Галичица</a>
+                        <a href="np-sarplanina.html">НП Шар Планина</a>
+                    </div>
+                </div>
+                <a href="aktivnosti.html">Активности</a>
+                <a href="prestoj.html">Престој</a>
+                <a href="pravila-na-odnesuvanje.html">Правила на однесување</a>
+                <div class="dropdown-flag">
+                    <button class="dropbtn-flag" onclick="myFunctionF()"></button>
+                    <div id="myDropdownF" class="drop-content-flag">
+                        <a href=""><div class="flag-2"></div></a>
+                        <a href=""><div class="flag-3"></div></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <img class="bg" src="./img/pozadina.webp" alt="">
+            <section class="hero-1">
+                <h1>АВТОРСКИ ПРАВА</h1>
+            </section>
+            <!-- <section class="text-block">
+                <h2>Дизајн и одржување</h2>
+                <p>Вебсајтот е креиран и редовно се одржува од страна на Сандра Радеска, со помош на проф. д-р Марија Ветероска и АУЕ-ФОН Универзитет.</p>
+            </section> -->
+            <section class="text-block">
+                <h2>Превземени фотографии</h2>
+                <ol>
+                    <li>David Henrichs - unsplash.com</li>
+                    <li>Axel Brunst - unsplash.com</li>
+                    <li>Todd Quackenbush - unsplash.com</li>
+                    <li>Eduardo Casajus Gorostiaga - unsplash.com</li>
+                    <li>Christian Bowen - unsplash.com</li>
+                    <li>Austin Ban - unsplash.com</li>
+                    <li>Antonio Janeski - unsplash.com</li>
+                    <li>Slavcho Malezanov - unsplash.com</li>
+                    <li>stefzn - unsplash.com</li>
+                    <li>Kristijan Arsov - unsplash.com</li>
+                    <li>Nikola Mihajlosk - unsplash.com</li>
+                </ol>
+            </section>
+            <section class="text-block">
+                <h2>Останати превземени содржини</h2>
+                <ol>
+                    <li>https://www.freepik.com/</li>
+                    <li>https://parade.com/1034896/marynliles/nature-quotes/</li>
+                    <li>https://www.flaticon.com/</li>
+                </ol>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <a href="index.html"><img src="./img/logo.webp" alt="logo na sajtot" width="175px"></a>
+                <img class="arrow-top" src="./img/icon_arrow.webp" alt="" onclick="scrolTop()">
+                <nav>
+                   <a href="index.html">Дома</a>
+                   <a href="aktivnosti.html">Активности</a>
+                   <a href="prestoj.html">Престој</a>
+                   <a href="pravila-na-odnesuvanje.html">Правила на однесување</a>
+                   <a href="za-nas.html">За нас</a>
+                   <a href="avtorski-prava.html">Авторски права</a>
+                </nav>
+                <nav>
+                    <a href="">Паркови</a>
+                    <a href="np-galicica.html">НП Галичица</a>
+                    <a href="np-pelister.html">НП Пелистер</a>
+                    <a href="np-mavrovo.html">НП Маврово</a>
+                    <a href="np-sarplanina.html">НП Шар Планина</a>
+                </nav>
+                <nav>
+                   <a href=""><div class="flag-1"></div></a>
+                   <a href=""><div class="flag-2"></div></a>
+                   <a href=""><div class="flag-3"></div></a>
+                </nav>
+            </div>
+            <p class="copyright">©<script>document.write(new Date().getUTCFullYear());</script>
+             Природен Резерват. Сите права се задржани.</p>
+        </footer>
+    </body>
+</html>

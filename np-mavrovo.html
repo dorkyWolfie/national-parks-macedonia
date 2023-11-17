@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="mk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="dropdown.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <title>Национален парк Маврово</title>
+    </head>
+    <body>
+        <div class="header-div"></div>
+        <div class="mobile-header">
+            <a href="index.html"><img class="logo" src="./img/logo.webp" alt="Logoto na vebsajtot"></a>
+            <img src="./img/icon_burger.webp" alt="" style="width: 30px; height: fit-content;" onclick="openBurger()">
+        </div>
+        <div id="menu" style="display: none;">
+            <img src="./img/icon_x.webp" alt="" style="width: 20px; height: fit-content;" onclick="closeBurger()">
+            <div class="menu-nav">
+                <a href="index.html">Дома</a>
+                <a href="np-pelister.html">НП Пелистер</a>
+                <a class="active" href="np-mavrovo.html">НП Маврово</a>
+                <a href="np-galicica.html">НП Галичица</a>
+                <a href="np-sarplanina.html">НП Шар Планина</a>
+                <a href="aktivnosti.html">Активности</a>
+                <a href="prestoj.html">Престој</a>
+                <a href="pravila-na-odnesuvanje.html">Правила на<br> однесување</a>
+                <div class="menu-flag">
+                    <a href=""><div class="flag-1"></div></a>
+                    <a href=""><div class="flag-2"></div></a>
+                    <a href=""><div class="flag-3"></div></a>
+                </div>
+            </div>
+        </div>
+        <header>
+            <a href="index.html"><img class="logo" src="./img/logo.webp" alt="Logoto na vebsajtot"></a>
+            <nav class="header-nav">
+                <a href="index.html">Дома</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">Паркови ▼</button>
+                    <div id="myDropdown" class="drop-content">
+                        <a href="np-pelister.html">НП Пелистер</a>
+                        <a class="active" href="np-mavrovo.html">НП Маврово</a>
+                        <a href="np-galicica.html">НП Галичица</a>
+                        <a href="np-sarplanina.html">НП Шар Планина</a>
+                    </div>
+                </div>
+                <a href="aktivnosti.html">Активности</a>
+                <a href="prestoj.html">Престој</a>
+                <a href="pravila-na-odnesuvanje.html">Правила на однесување</a>
+                <div class="dropdown-flag">
+                    <button class="dropbtn-flag" onclick="myFunctionF()"></button>
+                    <div id="myDropdownF" class="drop-content-flag">
+                        <a href=""><div class="flag-2"></div></a>
+                        <a href=""><div class="flag-3"></div></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <img class="bg" src="./img/pozadina.webp" alt="">
+            <section class="hero-7">
+                <h1>НАЦИОНАЛЕН ПАРК МАВРОВО</h1>
+            </section>
+            <section class="links">
+                <div>
+                    <img src="./img/icon_web.webp" alt="">
+                    <a target="_blank" href="https://npmavrovo.org.mk/">Н.П. Маврово</a>
+                </div>
+                <div>
+                    <img src="./img/icon_facebook.webp" alt="">
+                    <a target="_blank" href="https://www.facebook.com/mavrovo/?locale=mk_MK">Facebook Н.П. Маврово</a>
+                </div>
+            </section>
+            <section class="sec-text-photo">
+                <div>
+                    <h2>За паркот</h2>
+                </div>
+                <div class="text-photo">
+                    <div class="text">
+                        <p>Маврово — национален парк во западна Македонија кој зазема простор од 73.088
+                            хектари и најголем е меѓу трите национални паркови во Македонија. Како
+                            национален парк е прогласен во 1949 година. Во границите на паркот се опфатени
+                            планините: Кораб, Дешат, југозападните ограноци на Шар Планина, поголем дел од
+                            Бистра и северните делови на Крчин. Средишниот дел на националниот парк го
+                            зафаќа долината и сливот на реката Радика. Во склопот на националниот парк е и
+                            Мавровското вештачко езеро.</p>
+                        <p>Во границите на паркот се среќаваат голем број на интересни морфолошки форми:
+                            речни долини, клисури, водопади, карстни полиња, ували, вртачи, пештери,
+                            циркови, леднички езера, разни видови на денудациони облици и сл. Од
+                            растителноста на паркот најголема застапеност има заедницата од горска букова
+                            шума. Во границите на националниот парк Маврово се наоѓаат преку 52 планински
+                            врвови со надморска висина над 2000м од кои попознати се врвот Меденица на
+                            планината Бистра, Веливар, Сандакташ и др. Посебно значење за националниот парк
+                            Маврово има врвот Голем Кораб (2764 мнв.) кој е воедно и највисок врв во
+                            Р.Македонија а со тоа и највисока точка на паркот . Најниската точка на
+                            националниот парк Маврово е на 600 мнв. и се наоѓа на самото место каде што Мала
+                            Река се влева во реката Радика.</p>
+                    </div>
+                    <div class="photo">
+                        <img src="./img/mavrovo-1.webp" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="sec-text-photo">
+                <div>
+                    <h2>Флора</h2>
+                </div>
+                <div class="text-photo">
+                    <div class="photo">
+                        <img src="./img/mavrovo-2.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <p>Вкупниот број на досега познати видови од васкуларната флора за територијата
+                            на НП Маврово е заокружен на 1,435 видови, од кои дури 404 видови и подвидови се
+                            вклучени во категоријата на лековити растенија. Од биогеографски аспект,
+                            територијата на Националниот Парк Маврово, во рамките на Република Македонија,
+                            претставува матично подрачје на кое се развиваат бројни орео‐тундрални (аркто‐
+                            планински) и северни (бореални) флористички елементи.</p>
+                        <p>Покрај високиот диверзитет на видови, втора највпечатлива карактеристика на
+                            флората на Националниот Парк Маврово е релативно високиот степен на ендемизам
+                            (13 видови), како и присуство на ретки растителни видови (29 видови), кои на
+                            целата територија на Република Македонија се регистрирани единствено на
+                            локалитети во Националниот Парк Маврово.</p>
+                        <p>Анализата и валоризацијата на компонентите на биодиверзитетот е направена врз
+                            основа на бројни репрезентативни таксономски групи, од кои: Алги (78), Габи
+                            (661), Лишаи (151), Растенија (1,473).</p>
+                    </div>
+                </div>
+            </section>
+            <div class="quote-div"></div>
+            <section class="quote">
+                <h3>Инспиративен<br>цитат!</h3>
+                <div class="divider"></div>
+                <p>Гледањето на убавината во светот е првиот чекор за прочистување на умот. - Amit Ray</p>
+            </section>
+            <section class="sec-text-photo">
+                <div>
+                    <h2>Фауна</h2>
+                </div>
+                <div class="text-photo">
+                    <div class="text">
+                        <p>Анализата и валоризацијата на компонентите на биодиверзитетот е направена врз
+                            основа на бројни репрезентативни таксономски групи, кои вклучуваат: Риби (8),
+                            Водоземци (11), Влечуги (24), Птици (129) и Цицачи (50).</p>
+                        <p>На територијата на Националниот Парк Маврово утврдено е присуство на вкупно
+                            15 ендемични таксони (видови и подвидови) од кои: растенија (13), инвертебратна
+                            фауна (86), риби (3), водоземци (3), влечуги (5) и цицачи (5). Од вкупниот број
+                            (115) на ендемични видови и подвидови, 58 се локално/национални ендемити, додека
+                            останатите 57 се балкански ендемити.</p>
+                    </div>
+                    <div class="photo">
+                        <img src="./img/mavrovo-3.webp" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="sec-text-photo">
+                <div>
+                    <h2>Хидрографија</h2>
+                </div>
+                <div class="text-photo">
+                    <div class="photo">
+                        <img src="./img/mavrovo-4.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <p>Целокупната територија на Заштитеното Подрачје Национален Парк Маврово, во
+                            основа е вклучена во сливното подрачје на реката Радика, чиј просечен годишен
+                            проток на водана мерната станица Бошков Мост изнесува 19.63 m3/s. Реката Радика
+                            нема некој покарактеристичен извор, туку неа ја формираат поголем број на мали
+                            поточиња, кои настануваат по страните и дното на циркот Горни Деф‐Велин Бег.
+                            Како извор на Реката Радика земен е еден помал водотек што се формира на
+                            северозапад од врвот Голема Враца, на Целокупната територија на Заштитеното
+                            Подрачје Национален Парк Маврово, во основа е вклучена во сливното подрачје на
+                            реката Радика, чиј просечен годишен проток на водаизнесува 19.63 m3/s.Од
+                            хидролошки аспект, покрај реките, на територијата на Паркот се присутни и други
+                            хидролошки форми, од кои како позначајни акватични природни живеалишта
+                            (хабитатни типови) ќе ги споменеме изворите, ледничките езера и темпоралните
+                            локви, како и акумулацијата Мавровско Езеро.Во рамките на паркот постои еден од
+                            најсложените хидроенергетски системи ХЕЦ Маврово. Мавровскиот хидроенергетски
+                            систeм со трите централи ХЕ”Вруток”, ХЕ “Равен” и ХЕ “Врбен” и со вкупна
+                            акумулација од 277 милиони m3 вода претставува еден од најголемите и
+                            најсложените системи во македонскиот електроенергетски систем.</p>
+                    </div>
+                </div>
+            </section>
+            <div class="quote-div"></div>
+            <section class="quote">
+                <h3>Инспиративен<br>цитат!</h3>
+                <div class="divider"></div>
+                <p>Не судете го секој ден според жетвата што ја жнеете, туку 
+                    според семето што го садите. - Robert Louis Stevenson</p>
+            </section>
+            <section class="cards">
+                <div class="card-head">
+                    <h2>Активности</h2>
+                </div>
+                <div class="card-body">
+                    <div class="card">
+                        <img
+                            src="./img/aktivnosti_velosipedizam.webp"
+                            alt="fotografija od covek na velosiped">
+                        <div class="card-title">
+                            <p>Планински<br>велосипедизам</p>
+                            <button class="card-but" onclick="openPopup3()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="./img/aktivnosti_gledanje_ptici.webp"
+                            alt="fotografija od covek nabluduva ptici">
+                        <div class="card-title">
+                            <p>Набљудување<br>птици</p>
+                            <button class="card-but" onclick="openPopup5()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="./img/aktivnosti_planinarenje.webp"
+                            alt="fotografija od covek sto planinari">
+                        <div class="card-title">
+                            <p>Планинарење</p>
+                            <button class="card-but" onclick="openPopup6()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/aktivnosti_ribolov.webp" alt="fotografija od ribolovec">
+                        <div class="card-title">
+                            <p>Риболов</p>
+                            <button class="card-but" onclick="openPopup7()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/aktivnosti_paraglajding.webp" alt="fotografija od paraglajder">
+                        <div class="card-title">
+                            <p>Спуштање со<br>параглајдер</p>
+                            <button class="card-but" onclick="openPopup8()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/aktivnosti_skijanje.webp" alt="fotografija od covek sto skija">
+                        <div class="card-title">
+                            <p>Скијање</p>
+                            <button class="card-but" onclick="openPopup9()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/aktivnosti_javanje_konj.webp" alt="fotografija od covek na konj">
+                        <div class="card-title">
+                            <p>Јавање<br>коњ</p>
+                            <button class="card-but" onclick="openPopup10()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cards">
+                <div class="card-head">
+                    <h2>Престој</h2>
+                </div>
+                <div class="card-body">
+                    <div class="card">
+                        <img src="./img/prestoj_hotel.webp" alt="fotografija od hotelska soba">
+                        <div class="card-title">
+                            <p>Хотел</p>
+                            <button class="card-but" onclick="openPopup11()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/prestoj_planinarski_dom.webp" alt="fotografija od planinski dom">
+                        <div class="card-title">
+                            <p>Планински<br>дом</p>
+                            <button class="card-but" onclick="openPopup13()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/prestoj_kamp.webp" alt="fotografija od sator">
+                        <div class="card-title">
+                            <p>Кампување</p>
+                            <button class="card-but" onclick="openPopup14()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="popup" id="popup-3">
+                    <div class="pop-title">
+                        <h3>Активности - Планински велосипедизам</h3>
+                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup3()">
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за планински велосипедизам</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-5">
+                    <div class="pop-title">
+                        <h3>Активности - Набљудување птици</h3>
+                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup5()">
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за набљудување птици</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-6">
+                    <div class="pop-title">
+                        <h3>Активности - Планинарење</h3>
+                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup6()">
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за планинарење</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-7">
+                    <div class="pop-title">
+                        <h3>Активности - Риболов</h3>
+                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup7()">
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за риболов</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-8">
+                    <div class="pop-title">
+                        <h3>Активности - Спуштање со параглајдер</h3>
+                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup8()">
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за спуштање со параглајдер</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-9">
+                    <div class="pop-title">
+                        <h3>Активности - Скијање</h3>
+                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup9()">
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за скијање</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-10">
+                    <div class="pop-title">
+                        <h3>Активности - Јавање коњ</h3>
+                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup10()">
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за јавање коњ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-11">
+                    <div class="pop-title">
+                        <h3>Активности - Хотел</h3>
+                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup11()">
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за хотел</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-13">
+                    <div class="pop-title">
+                        <h3>Активности - Планински дом</h3>
+                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup13()">
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за планински дом</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-14">
+                    <div class="pop-title">
+                        <h3>Активности - Кампување</h3>
+                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup14()">
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за кампување</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <a href="index.html"><img src="./img/logo.webp" alt="logo na sajtot" width="175px"></a>
+                <img class="arrow-top" src="./img/icon_arrow.webp" alt="" onclick="scrolTop()">
+                <nav>
+                   <a href="index.html">Дома</a>
+                   <a href="aktivnosti.html">Активности</a>
+                   <a href="prestoj.html">Престој</a>
+                   <a href="pravila-na-odnesuvanje.html">Правила на однесување</a>
+                   <a href="za-nas.html">За нас</a>
+                   <a href="avtorski-prava.html">Авторски права</a>
+                </nav>
+                <nav>
+                    <a href="">Паркови</a>
+                    <a href="np-galicica.html">НП Галичица</a>
+                    <a href="np-pelister.html">НП Пелистер</a>
+                    <a href="np-mavrovo.html">НП Маврово</a>
+                    <a href="np-sarplanina.html">НП Шар Планина</a>
+                </nav>
+                <nav>
+                   <a href=""><div class="flag-1"></div></a>
+                   <a href=""><div class="flag-2"></div></a>
+                   <a href=""><div class="flag-3"></div></a>
+                </nav>
+            </div>
+            <p class="copyright">©<script>document.write(new Date().getUTCFullYear());</script>
+             Природен Резерват. Сите права се задржани.</p>
+        </footer>
+    </body>
+</html>

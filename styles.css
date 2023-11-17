@@ -1,0 +1,658 @@
+body {
+    --primarna-color: rgb(0 172 103);
+    --sekundarna-color: rgb(209 240 227);
+    --akcent-color: rgb(174 45 99);
+    margin: 0 8rem;
+    font-family: "Roboto", serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+p {
+    letter-spacing: .5px;
+}
+
+h1 {
+    margin: 0 2rem;
+}
+
+h2 {
+    font-family: "Roboto Serif", serif;
+    letter-spacing: .5px;
+}
+
+/* -----header ----- */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-div {
+    position: absolute;
+    margin: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 55px;
+    background-color: rgba(209, 240, 227, .8);
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a:hover {
+    color: var(--akcent-color);
+}
+
+.active {
+    color: var(--akcent-color);
+}
+
+.logo {
+    width: 100px;
+    height: fit-content;
+}
+
+/* ------ dropdown parkovi ------ */
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(209, 240, 227, .8);
+    min-width: 180px;
+    z-index: 1;
+    margin-top: 15px;
+}
+
+.drop-content a {
+    padding: 12px 16px;
+    display: block;
+}
+  
+.drop-content a:hover {background-color: rgba(174, 45, 99, .2);}
+  
+.dropbtn:hover, .dropbtn:focus {color: var(--akcent-color);} 
+
+.show {display:block;}
+
+/* ------ dropdown zname ------ */
+.dropbtn-flag {
+    background-image: url(./img/zname_mkd.webp);
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.dropdown-flag {
+    position: relative;
+    display: inline-block;
+}
+
+.drop-content-flag {
+    display: none;
+    position: absolute;
+    background-color: rgba(209, 240, 227, .8);
+    min-width: 50px;
+    z-index: 1;
+    margin-top: 10px;
+
+}
+
+.drop-content-flag a {
+    padding: 10px 16px;
+    display: block;
+}
+
+.showF {display:block;}
+
+[class*="flag-"] {
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    width: 30px;
+    height: 22px;
+    background-repeat: no-repeat;
+}
+
+.flag-1 {
+    background-image: url(./img/zname_mkd.webp);
+}
+
+.flag-2 {
+    background-image: url(./img/zname_al.webp);
+}
+
+.flag-3 {
+    background-image: url(./img/zname_uk.webp);
+}
+
+/* ----- footer ----- */
+footer {
+    position: absolute;
+    background-color: var(--sekundarna-color);
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.footer {
+    margin: 0 8rem;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3px;
+}
+
+.copyright {
+    text-align: center;
+    background-color: var(--primarna-color);
+    color: white;
+    margin: 0;
+    padding: 5px;
+}
+
+/* ----- hero section ----- */
+[class*="hero-"] {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -2;
+    padding: 22%;
+    margin: 0 -8rem;
+    background-size: cover;
+    background-position: center;
+    font-family: "Roboto Serif", serif;
+    color: white;
+    text-align: center;
+    font-size: 18pt;
+    letter-spacing: 1px;
+}
+
+.hero-1 {
+    background-image: url("./img/naslovna_doma.webp");
+}
+
+.hero-2 {
+    background-image: url("./img/naslovna_aktivnosti.webp");
+}
+
+.hero-3 {
+    background-image: url("./img/naslovna_prestoj.webp");
+}
+
+.hero-4 {
+    background-image: url("./img/naslovna_pravila_na_odnesuvanje.webp");
+}
+
+.hero-5 {
+    background-image: url("./img/naslovna_za_nas.webp");
+}
+
+.hero-6 {
+    background-image: url("./img/naslovna_pelister.webp");
+}
+
+.hero-7 {
+    background-image: url("./img/naslovna_mavrovo.webp");
+}
+
+.hero-8 {
+    background-image: url("./img/naslovna_galicica.webp");
+}
+
+.hero-9 {
+    background-image: url("./img/naslovna_sar_planina.webp");
+}
+
+/* ----- map section ----- */
+.map {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    gap: 50px;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.map-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    background-color: var(--sekundarna-color);
+    border-radius: 25px;
+}
+
+svg {
+    width: 450px
+}
+
+/* ----- quote section ----- */
+.quote-div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: var(--sekundarna-color);
+    height: 100px;
+    z-index: -1;
+}
+
+.quote {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    height: 100px;
+    margin: 5rem 0;
+}
+
+.quote h3 {
+    font-family: "Roboto Serif", serif;
+    font-size: 16pt;
+    letter-spacing: 1px;
+}
+
+.divider {
+    width: 4px;
+    height: 60px;
+    background-color: var(--akcent-color);
+}
+
+.quote p, #zanas-citat {
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: .5px;
+}
+
+/* ----- card section ----- */
+.cards {
+    margin: 5rem 0;
+}
+
+.card-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards-but {
+    padding: 10px;
+    font-weight: 600;
+    background-color: white;
+    border: 3px solid var(--akcent-color);
+    border-radius: 10px;
+
+}
+
+.card {
+    width: 325px;
+    min-width: 300px;
+    height: 225px;
+    background-color: rgba(209, 240, 227, .8);
+    border-radius: 20px;
+}
+
+.card-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0 15px;
+    font-weight: 700;
+}
+
+.card-but {
+    background-color: var(--primarna-color);
+    color: white;
+    border-color: transparent;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    max-width: 150px;
+    font-size: 10pt;
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+}
+
+.text-block {
+    margin: 5rem auto;
+    width: 60%;
+    height: auto;
+    text-align: start;
+}
+
+/* ----- park links ----- */
+.links {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.links img {
+    width: 30px;
+}
+
+.links div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+/* ----- park text + photo section ----- */
+.sec-text-photo {
+    margin: 5rem 0 5rem 0;
+}
+
+.text-photo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.text {
+    width: 60%;
+    height: auto;
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 300px;
+    height: auto;
+}
+
+.bg {
+    z-index: -5;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: .25;
+    overflow: hidden;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(209, 240, 227, .7);
+    backdrop-filter: blur(6px);
+}
+
+.pop-title {
+    margin: 70px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+    width: 50%;
+    position: relative;
+}
+
+#close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
+
+#menu {
+    position: absolute;
+    flex-direction: row-reverse;
+    justify-content: center;
+    background: rgba(209, 240, 227, .9);
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    padding: 15px;
+    gap: 50px;
+}
+
+.menu-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu-nav a:hover {
+    color: var(--akcent-color);
+}
+
+.menu-flag {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .map-text {
+        width: 300px;
+    }
+
+    .text-photo {
+        margin: 0 -5rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .mobile-header{
+        display: none;
+    }
+
+    .arrow-top {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .np-photo-1 {
+        display: none;
+    }
+
+    .sec-text-photo div h2 {
+        text-align: center;
+    }
+
+    .card-head {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .pop-title {
+        width: 70%;
+    }
+
+    header {
+        display: none;
+    }
+
+    footer nav {
+        display: none;
+    }
+
+    .mobile-header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .arrow-top {
+        position: absolute;
+        display: block;
+        width: 60px;
+        right: 100px;
+        transform: rotate(-90deg);
+        margin-bottom: 180px;
+    }
+
+    .links {
+        justify-content: center;
+    }
+
+    .text {
+        width: 80%;
+    }
+
+    
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        margin: 0 3rem;
+    }
+
+    [class*="hero-"] {
+        font-size: 16pt;
+        margin: 0 -3rem;
+    }
+
+    h1 {
+        margin: auto;
+    }
+
+    .quote, .quote-div {
+        display: none;
+    }
+
+    .card-head {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    p, li, a {
+        font-size: 10pt;
+    }
+
+    h2 {
+        font-size: 14pt;
+    }
+
+    h3 {
+        font-size: 12pt;
+    }
+
+    .links img {
+        width: 20px;
+    }
+
+    .text-photo {
+        margin: 0;
+    }
+
+    .text-block {
+        width: 80%;
+    }
+}
+
+.cls-1, .cls-4 {
+    fill: #fff;
+}
+.cls-1 {
+    stroke: #000;
+    stroke-miterlimit: 10;
+    stroke-width: 8px;
+}
+.cls-2 {
+    fill: #bfe5f8;
+}
+.cls-3 {
+    fill: #ae2d63;
+}
+.cls-5 {
+    fill: #00ac67;
+}
+
+.cls-5:hover {
+    fill: var(--akcent-color);
+}
+
+.hide {
+    display: none;
+}
