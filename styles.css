@@ -653,6 +653,10 @@ svg {
     fill: var(--akcent-color);
 }
 
+.active-icon {
+    fill: var(--akcent-color);
+}
+
 .hide {
     display: none;
 }
