@@ -4,7 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <script src="menu.js"></script>
         <script src="dropdown.js"></script>
+        <script src="popup.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&display=swap" rel="stylesheet">
@@ -12,52 +15,41 @@
         <title>Национален парк Галичица</title>
     </head>
     <body>
-        <div class="header-div"></div>
-        <div class="mobile-header">
-            <a href="index.html"><img class="logo" src="./img/logo.webp" alt="Logoto na vebsajtot"></a>
-            <img src="./img/icon_burger.webp" alt="" style="width: 30px; height: fit-content;" onclick="openBurger()">
-        </div>
-        <div id="menu" style="display: none;">
-            <img src="./img/icon_x.webp" alt="" style="width: 20px; height: fit-content;" onclick="closeBurger()">
-            <div class="menu-nav">
-                <a href="index.html">Дома</a>
-                <a href="np-pelister.html">НП Пелистер</a>
-                <a href="np-mavrovo.html">НП Маврово</a>
-                <a class="active" href="np-galicica.html">НП Галичица</a>
-                <a href="np-sarplanina.html">НП Шар Планина</a>
-                <a href="aktivnosti.html">Активности</a>
-                <a href="prestoj.html">Престој</a>
-                <a href="pravila-na-odnesuvanje.html">Правила на<br> однесување</a>
-                <div class="menu-flag">
-                    <a href=""><div class="flag-1"></div></a>
-                    <a href=""><div class="flag-2"></div></a>
-                    <a href=""><div class="flag-3"></div></a>
-                </div>
-            </div>
-        </div>
         <header>
-            <a href="index.html"><img class="logo" src="./img/logo.webp" alt="Logoto na vebsajtot"></a>
-            <nav class="header-nav">
-                <a href="index.html">Дома</a>
-                <div class="dropdown">
-                    <button class="dropbtn" onclick="myFunction()">Паркови ▼</button>
-                    <div id="myDropdown" class="drop-content">
-                        <a href="np-pelister.html">НП Пелистер</a>
-                        <a href="np-mavrovo.html">НП Маврово</a>
-                        <a class="active" href="np-galicica.html">НП Галичица</a>
-                        <a href="np-sarplanina.html">НП Шар Планина</a>
-                    </div>
-                </div>
-                <a href="aktivnosti.html">Активности</a>
-                <a href="prestoj.html">Престој</a>
-                <a href="pravila-na-odnesuvanje.html">Правила на однесување</a>
-                <div class="dropdown-flag">
-                    <button class="dropbtn-flag" onclick="myFunctionF()"></button>
-                    <div id="myDropdownF" class="drop-content-flag">
-                        <a href=""><div class="flag-2"></div></a>
-                        <a href=""><div class="flag-3"></div></a>
-                    </div>
-                </div>
+            <section>
+                <a href="/"><img class="logo" src="./img/logo.webp" alt="Logo"></a>
+                <i id="openMenu" class="fa-solid fa-bars" onclick="openMenu()"></i>
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="/">Дома</a></li>
+                        <div class="dropdown">
+                            <li class="dropbtn">Паркови <i class="fa-solid fa-angle-down"></i></li>
+                            <ul class="dropdown-content">
+                                <li><a href="np-pelister.html">НП Пелистер</a></li>
+                                <li><a href="np-mavrovo.html">НП Маврово</a></li>
+                                <li><a class="active" href="np-galicica.html">НП Галичица</a></li>
+                                <li><a href="np-sarplanina.html">НП Шар Планина</a></li>
+                            </ul>
+                        </div>
+                        <li><a href="aktivnosti.html">Активности</a></li>
+                        <li><a href="prestoj.html">Престој</a></li>
+                        <li><a href="pravila-na-odnesuvanje.html">Правила на однесување</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <nav id="mobMenu">
+                <i id="closeMenu" class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                <ul>
+                    <li><a href="/">Дома</a></li>
+                    <li><a href="np-pelister.html">НП Пелистер</a></li>
+                    <li><a href="np-mavrovo.html">НП Маврово</a></li>
+                    <li><a class="active" href="np-galicica.html">НП Галичица</a></li>
+                    <li><a href="np-sarplanina.html">НП Шар Планина</a></li>
+                    <li><a href="aktivnosti.html">Активности</a></li>
+                    <li><a href="prestoj.html"></a>Престој</li>
+                    <li><a href="pravila-na-odnesuvanje.html">Правила на<br>
+                        однесување</a></li>
+                </ul>
             </nav>
         </header>
         <main>
@@ -66,14 +58,12 @@
                 <h1>НАЦИОНАЛЕН ПАРК ГАЛИЧИЦА</h1>
             </section>
             <section class="links">
-                <div>
-                    <img src="./img/icon_web.webp" alt="">
-                    <a target="_blank" href="https://galicica.org.mk/">Н.П. Галичица</a>
-                </div>
-                <div>
-                    <img src="./img/icon_facebook.webp" alt="">
-                    <a target="_blank" href="https://www.facebook.com/galicicanp/">Facebook Н.П. Галичица</a>
-                </div>
+                <a target="_blank" href="https://galicica.org.mk/">
+                    <i class="fa-solid fa-globe"></i>
+                    Н.П. Галичица</a>
+                <a target="_blank" href="https://www.facebook.com/galicicanp/">
+                    <i class="fa-brands fa-facebook"></i>
+                    Facebook Н.П. Галичица</a>
             </section>
             <section class="sec-text-photo">
                 <div>
@@ -102,7 +92,7 @@
                 <div>
                     <h2>Флора</h2>
                 </div>
-                <div class="text-photo">
+                <div class="text-photo revers-photo">
                     <div class="photo">
                         <img src="./img/galicica-2.webp" alt="fotografija od flora">
                         <img class="np-photo-1" src="./img/galicica-2_1.webp" alt="fotografija od flora">
@@ -127,12 +117,13 @@
                     </div>
                 </div>
             </section>
-            <div class="quote-div"></div>
             <section class="quote">
-                <h3>Инспиративен<br>цитат!</h3>
-                <div class="divider"></div>
-                <p>Пролетта е начин на природата да каже: 
-                    „Ајде да се забавуваме!“. - Robin Williams</p>
+                <div>
+                    <h3>Инспиративен<br>цитат!</h3>
+                    <div class="divider"></div>
+                    <p>Пролетта е начин на природата да каже: 
+                        „Ајде да се забавуваме!“. - Robin Williams</p>
+                </div>
             </section>
             <section class="sec-text-photo">
                 <div>
@@ -155,7 +146,7 @@
                 <div>
                     <h2>Хидрографија</h2>
                 </div>
-                <div class="text-photo">
+                <div class="text-photo revers-photo">
                     <div class="photo">
                         <img src="./img/galicica-4.webp" alt="fotografija od ezero">
                     </div>
@@ -176,12 +167,13 @@
                     </div>
                 </div>
             </section>
-            <div class="quote-div"></div>
             <section class="quote">
-                <h3>Инспиративен<br>цитат!</h3>
-                <div class="divider"></div>
-                <p>Искористете ги талентите што ги поседувате: шумите би биле многу 
-                    тивки ако пеат само оние птици кои пеат најдобро. - Henry van Dyke</p>
+                <div>
+                    <h3>Инспиративен<br>цитат!</h3>
+                    <div class="divider"></div>
+                    <p>Искористете ги талентите што ги поседувате: шумите би биле многу 
+                        тивки ако пеат само оние птици кои пеат најдобро. - Henry van Dyke</p>
+                </div>
             </section>
             <section class="cards">
                 <div class="card-head">
@@ -298,7 +290,7 @@
                 <div class="popup" id="popup-1">
                     <div class="pop-title">
                         <h3>Активности - Нуркање</h3>
-                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup1()">
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup1()"></i>
                         <div class="pop-content">
                             <p>Тука треба да има информации за нуркање</p>
                         </div>
@@ -307,7 +299,7 @@
                 <div class="popup" id="popup-2">
                     <div class="pop-title">
                         <h3>Активности - Пливање</h3>
-                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup2()">
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup2()"></i>
                         <div class="pop-content">
                             <p>Тука треба да има информации за пливање</p>
                         </div>
@@ -316,7 +308,7 @@
                 <div class="popup" id="popup-3">
                     <div class="pop-title">
                         <h3>Активности - Планински велосипедизам</h3>
-                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup3()">
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup3()"></i>
                         <div class="pop-content">
                             <p>Тука треба да има информации за планински велосипедизам</p>
                         </div>
@@ -325,7 +317,7 @@
                 <div class="popup" id="popup-4">
                     <div class="pop-title">
                         <h3>Активности - Кајакарење</h3>
-                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup4()">
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup4()"></i>
                         <div class="pop-content">
                             <p>Тука треба да има информации за кајакарење</p>
                         </div>
@@ -334,7 +326,7 @@
                 <div class="popup" id="popup-5">
                     <div class="pop-title">
                         <h3>Активности - Набљудување птици</h3>
-                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup5()">
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup5()"></i>
                         <div class="pop-content">
                             <p>Тука треба да има информации за набљудување птици</p>
                         </div>
@@ -343,7 +335,7 @@
                 <div class="popup" id="popup-6">
                     <div class="pop-title">
                         <h3>Активности - Планинарење</h3>
-                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup6()">
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup6()"></i>
                         <div class="pop-content">
                             <p>Тука треба да има информации за планинарење</p>
                         </div>
@@ -352,7 +344,7 @@
                 <div class="popup" id="popup-7">
                     <div class="pop-title">
                         <h3>Активности - Риболов</h3>
-                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup7()">
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup7()"></i>
                         <div class="pop-content">
                             <p>Тука треба да има информации за риболов</p>
                         </div>
@@ -361,7 +353,7 @@
                 <div class="popup" id="popup-8">
                     <div class="pop-title">
                         <h3>Активности - Спуштање со параглајдер</h3>
-                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup8()">
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup8()"></i>
                         <div class="pop-content">
                             <p>Тука треба да има информации за спуштање со параглајдер</p>
                         </div>
@@ -370,7 +362,7 @@
                 <div class="popup" id="popup-10">
                     <div class="pop-title">
                         <h3>Активности - Јавање коњ</h3>
-                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup10()">
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup10()"></i>
                         <div class="pop-content">
                             <p>Тука треба да има информации за јавање коњ</p>
                         </div>
@@ -379,7 +371,7 @@
                 <div class="popup" id="popup-11">
                     <div class="pop-title">
                         <h3>Активности - Хотел</h3>
-                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup11()">
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup11()"></i>
                         <div class="pop-content">
                             <p>Тука треба да има информации за хотел</p>
                         </div>
@@ -388,7 +380,7 @@
                 <div class="popup" id="popup-12">
                     <div class="pop-title">
                         <h3>Активности - Апартман</h3>
-                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup12()">
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup12()"></i>
                         <div class="pop-content">
                             <p>Тука треба да има информации за апартман</p>
                         </div>
@@ -397,7 +389,7 @@
                 <div class="popup" id="popup-13">
                     <div class="pop-title">
                         <h3>Активности - Планински дом</h3>
-                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup13()">
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup13()"></i>
                         <div class="pop-content">
                             <p>Тука треба да има информации за планински дом</p>
                         </div>
@@ -406,7 +398,7 @@
                 <div class="popup" id="popup-14">
                     <div class="pop-title">
                         <h3>Активности - Кампување</h3>
-                        <img id="close" src="./img/icon_x.webp" alt="" onclick="closePopup14()">
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup14()"></i>
                         <div class="pop-content">
                             <p>Тука треба да има информации за кампување</p>
                         </div>
@@ -417,30 +409,34 @@
         <footer>
             <div class="footer">
                 <a href="index.html"><img src="./img/logo.webp" alt="logo na sajtot" width="175px"></a>
-                <img class="arrow-top" src="./img/icon_arrow.webp" alt="" onclick="scrolTop()">
+                <i class="fa-solid fa-angle-up" id="arrow-top" onclick="scrolTop()"></i>
                 <nav>
-                   <a href="index.html">Дома</a>
-                   <a href="aktivnosti.html">Активности</a>
-                   <a href="prestoj.html">Престој</a>
-                   <a href="pravila-na-odnesuvanje.html">Правила на однесување</a>
-                   <a href="za-nas.html">За нас</a>
-                   <a href="avtorski-prava.html">Авторски права</a>
+                    <ul>
+                        <li><a href="index.html">Дома</a></li>
+                        <li><a href="aktivnosti.html">Активности</a></li>
+                        <li><a href="prestoj.html">Престој</a></li>
+                    </ul>
                 </nav>
                 <nav>
-                    <a href="">Паркови</a>
-                    <a href="np-galicica.html">НП Галичица</a>
-                    <a href="np-pelister.html">НП Пелистер</a>
-                    <a href="np-mavrovo.html">НП Маврово</a>
-                    <a href="np-sarplanina.html">НП Шар Планина</a>
+                    <ul>
+                        <li><a href="za-nas.html">За нас</a></li>
+                        <li><a href="avtorski-prava.html">Авторски права</a></li>
+                        <li><a href="pravila-na-odnesuvanje.html">Правила на однесување</a></li>
+                    </ul>
                 </nav>
                 <nav>
-                   <a href=""><div class="flag-1"></div></a>
-                   <a href=""><div class="flag-2"></div></a>
-                   <a href=""><div class="flag-3"></div></a>
+                    <ul>
+                        <li><a class="active" href="np-galicica.html">НП Галичица</a></li>
+                        <li><a href="np-pelister.html">НП Пелистер</a></li>
+                        <li><a href="np-mavrovo.html">НП Маврово</a></li>
+                        <li><a href="np-sarplanina.html">НП Шар Планина</a></li>
+                    </ul>
                 </nav>
             </div>
-            <p class="copyright">©<script>document.write(new Date().getUTCFullYear());</script>
-             Природен Резерват. Сите права се задржани.</p>
+            <p class="copyright">© <script>
+                    document.write(new Date().getUTCFullYear());
+                </script>
+                Природен Резерват. Сите права се задржани.</p>
         </footer>
     </body>
 </html>
