@@ -1,47 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mk">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="index, follow">
-        <meta name="description" content="This is a website showcasing all national parks in Republic of Macedonia,">
+        <meta name="description" content="">
         <meta name="keywords" content="">
         <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-        <script src="./js/menu.js"></script>
-        <script src="./js/dropdown.js"></script>
-        <script src="./js/dropdown-menu.js"></script>
-        <script src="./js/map.js"></script>
-        <script src="./js/popup.js"></script>
-        <title>National Parks R.N. Macedonia</title>
+        <script src="../js/menu.js"></script>
+        <script src="../js/dropdown.js"></script>
+        <script src="../js/dropdown-menu.js"></script>
+        <script src="../js/map.js"></script>
+        <script src="../js/popup.js"></script>
+        <title>Национални паркови Р.С. Македонија</title>
     </head>
     <body>
         <header>
             <section>
-                <a href="index.html"><img class="logo" src="./img/logo.webp" alt="Logo"></a>
+                <a href="index.html"><img class="logo" src="../img/logo.webp" alt="Logo"></a>
                 <i id="openMenu" class="fa-solid fa-bars" onclick="openMenu()"></i>
                 <nav class="desktop-nav">
                     <ul>
-                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a class="active" href="./index.html">Дома</a></li>
                         <li class="dropdown-menu">
                             <button class="dropbtn-menu" onclick="myFunctionM()">
-                                Parks <i class="fa-solid fa-angle-down"></i></button>
+                                Паркови <i class="fa-solid fa-angle-down"></i></button>
                             <div id="myDropdownM" class="drop-content-menu">
-                                <a href="./en/np-pelister.html">Pelister N.P.</a>
-                                <a href="./en/np-mavrovo.html">Mavrovo N.P.</a>
-                                <a href="./en/np-galicica.html">Galicica N.P.</a>
-                                <a href="./en/np-sarplanina.html">Shar Mountain N.P.</a>
+                                <a href="np-pelister.html">Н.П. Пелистер</a>
+                                <a href="np-mavrovo.html">Н.П. Маврово</a>
+                                <a href="np-galicica.html">Н.П. Галичица</a>
+                                <a href="np-sarplanina.html">Н.П. Шар Планина</a>
                             </div>
                         </li>
-                        <li><a href="./en/activities.html">Activities</a></li>
-                        <li><a href="./en/stay.html">Stay</a></li>
-                        <li><a href="./en/rules-of-conduct.html">Rules of Conduct</a></li>
+                        <li><a href="aktivnosti.html">Активности</a></li>
+                        <li><a href="prestoj.html">Престој</a></li>
+                        <li><a href="pravila-na-odnesuvanje.html">Правила на однесување</a></li>
                         <li class="dropdown-flag">
-                            <button class="dropbtn-flag flag-3" onclick="myFunctionF()"></button>
+                            <button class="dropbtn-flag flag-1" onclick="myFunctionF()"></button>
                             <div id="myDropdownF" class="drop-content-flag">
                                 <!-- <a href=""><div class="flag-2"></div></a> -->
-                                <a href="./mk/index.html"><div class="flag-1"></div></a>
+                                <a href="../index.html"><div class="flag-3"></div></a>
                             </div>
                         </li>
                     </ul>
@@ -50,23 +50,23 @@
             <nav id="mobMenu">
                 <i id="closeMenu" class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="./en/np-pelister.html">Pelister N.P.</a></li>
-                    <li><a href="./en/np-mavrovo.html">Mavrovo N.P.</a></li>
-                    <li><a href="./en/np-galicica.html">Galicica N.P.</a></li>
-                    <li><a href="./en/np-sarplanina.html">Shar Mountain N.P.</a></li>
-                    <li><a href="./en/activities.html">Activities</a></li>
-                    <li><a href="./en/stay.html">Stay</a></li>
-                    <li><a href="./en/rules-of-conduct.html">Rules of Conduct</a></li>
-                    <li><a href="./en/about.html">About Us</a></li>
-                    <li><a href="./mk/index.html"><div class="flag-1"></div></a></li>
+                    <li><a class="active" href="index.html">Дома</a></li>
+                    <li><a href="np-pelister.html">НП Пелистер</a></li>
+                    <li><a href="np-mavrovo.html">НП Маврово</a></li>
+                    <li><a href="np-galicica.html">НП Галичица</a></li>
+                    <li><a href="np-sarplanina.html">НП Шар Планина</a></li>
+                    <li><a href="aktivnosti.html">Активности</a></li>
+                    <li><a href="prestoj.html">Престој</a></li>
+                    <li><a href="pravila-na-odnesuvanje.html">Правила на однесување</a></li>
+                    <li><a href="za-nas.html">За нас</a></li>
+                    <li><a href="../index.html"><div class="flag-3"></div></a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <img class="bg" src="./img/pozadina.webp" alt="">
+            <img class="bg" src="../img/pozadina.webp" alt="позадина">
             <section class="hero-1">
-                <h1>DISCOVER MACEDONIA</h1>
+                <h1>ИСТРАЖИ ЈА МАКЕДОНИЈА</h1>
             </section>
             <section class="map">
                 <svg id="mapa" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 764.89 605.16">
@@ -121,140 +121,140 @@
                         transform="translate(-16.55 3.87)"/></g> 
                 </svg>
                 <div class="map-text" id="start">
-                    <h2>National Parks in Macedonia</h2>
-                    <p>Welcome to the portal of the National Parks in the Republic of Macedonia.</p>
-                    <p>Click on any of the locations to delve deeper and discover more about these natural wonders.</p>
+                    <h2>Национални паркови Македонија</h2>
+                    <p>Добредојдовте на порталот на Националните Паркови во Република Македонија.</p>
+                    <p>Кликнете на било која од локациите за подетално да откриете повеќе за овие природни чуда.</p>
                 </div>
                 <div class="hide map-text" id="location4">
-                    <h2>Pelister National Park</h2>
-                    <p>Welcome to Pelister National Park, a pristine natural sanctuary nestled in the heart of Macedonia. Established in 1948 by the People's Republic of Macedonia, it proudly bears the distinction of being the oldest national park in the country. At the core of this majestic park is Mount Baba,crowned by the magnificent peak of Pelister, which rises to a breathtaking height of 2,601 meters above sea level, this ancient mountain range is a symbol of resilience and endurance, standing tall for an astonishing 465 million years.</p>
+                    <h2>Национални парк Пелистер</h2>
+                    <p>Добредојдовте во Пелистер национален парк, светски природен резерват во срцето на Македонија. Основан во 1948 година од Народна Република Македонија, со гордост го носи името најстар национален парк во земјата. Јадрото на овој величествен парк е Планина Баба, овенчана со величествениот врв Пелистер, кој е издигнат на зачудувачка висина од 2,601 метри надморска височина. Оваа древна планинска верига е симбол на издржливост и опстанок, стоејќи горделиво висока цели 465 милиони години.</p>
                     <a href="/np-pelister.html">
-                        <button class="card-but">Find out more!</button>
+                        <button class="card-but">Дознај повеќе!</button>
                     </a>
                 </div>
                 <div class="hide map-text" id="location2">
-                    <h2>Mavrovo National Park</h2>
-                    <p>Welcome to the enchanting Mavrovo National Park, nestled in the picturesque landscapes of western Macedonia. Spanning an impressive 73,088 hectares, it proudly holds the title of the largest among Macedonia's quartet of national parks. Since its official designation as a national park in 1949, Mavrovo has been a cherished haven for nature lovers and adventurers alike. Here, amidst its breathtaking scenery, you'll find a sanctuary where tranquility and natural beauty reign supreme.</p>
+                    <h2>Национални парк Маврово</h2>
+                    <p>Маврово, прекрасниот национален парк во западна Македонија, зафаќа импресивни 73,088 хектари и е најголем меѓу четирите национални паркови во земјата. Официјално прогласен за национален парк во 1949 година, Маврово претставува бисер во богатството на македонската природа.</p>
                     <a href="/np-mavrovo.html">
-                        <button class="card-but">Find out more!</button>
+                        <button class="card-but">Дознај повеќе!</button>
                     </a>
                 </div>
                 <div class="hide map-text" id="location3">
-                    <h2>Galicica National Park</h2>
-                    <p>Welcome to Galichica National Park, a captivating natural treasure established in 1958 to safeguard the pristine beauty of Macedonia's southwestern region. Nestled amidst the majestic Galichica mountain massif, this park encompasses not only the main body of the mountain but also stretches to include portions of its East and Petrino branches, along with the enchanting island of Golem Grad nestled in the tranquil waters of Prespa Lake.</p>
+                    <h2>Национални парк Галичица</h2>
+                    <p>Добредојдовте во Националниот парк Галичица, прогласен во 1958 година, a се наоѓа во прекрасниот југозападен дел на Македонија. Ова природно богатство се простира на планинскиот масив Галичица, вклучувајќи ги неговите разновидни ограноци како Исток и Петрино, и чаробниот остров Голем Град, што лежи во Преспанското Езеро.</p>
                     <a href="/np-galicica.html">
-                        <button class="card-but">Find out more!</button>
+                        <button class="card-but">Дознај повеќе!</button>
                     </a>
                 </div>
                 <div class="hide map-text" id="location1">
-                    <h2>Shar Mountain National Park</h2>
-                    <p>Welcome to the stunning Shar Mountain, our newest National Park nestled in the borderlands of North Macedonia, Kosovo, and Albania. This expansive mountain range boasts awe-inspiring natural beauty and is hailed as a hotspot for biodiversity in Europe. Shar Mountain promises unforgettable adventures and endless opportunities to connect with the great outdoors. Join us as we celebrate the preservation of this precious landscape for generations to come.</p>
+                    <h2>Национални парк Шар Планина</h2>
+                    <p>Добредојдовте на величествената Шар Планина, најновиот национален парк што се протега во пограничјето на Северна Македонија, Косово и Албанија. Оваа пространа планинска верига се фали со впечатливата природна убавина и е прогласена за место на најголема разновидност на животни во Европа. Шар Планина ветува незаборавни авантури и безброј можности за поврзување со големите простори. Придружете ни се додека го прославуваме зачувувањето на овој преубав пејзаж за идните генерации.</p>
                     <a href="/np-sarplanina.html">
-                        <button class="card-but">Find out more!</button>
+                        <button class="card-but">Дознај повеќе!</button>
                     </a>
                 </div>
             </section>
             <section class="quote">
                 <div>
-                    <h3>Inspirational<br>quote!</h3>
+                    <h3>Инспиративен<br>цитат!</h3>
                     <div class="divider"></div>
-                    <p>By discovering nature, you discover yourself. - Maxime Legace</p>
+                    <p>Откривајќи ја природата, се откривате себеси. - Maxime Legace</p>
                 </div>
             </section>
             <section class="cards">
                 <div class="card-head">
-                    <h2>Activities</h2>
-                    <a href="en/activities.html"><button class="cards-but">Check out all activities!</button></a>
+                    <h2>Активности</h2>
+                    <a href="aktivnosti.html"><button class="cards-but">Види ги сите активности!</button></a>
                 </div>
                 <div class="card-body">
                     <div class="card">
-                        <img src="./img/aktivnosti_nurkanje.webp" alt="fotografija od covek sto nurka">
+                        <img src="../img/aktivnosti_nurkanje.webp" alt="фотографија од нуркач">
                         <div class="card-title">
-                            <p>Diving</p>
-                            <button class="card-but open" onclick="openPopup1()">See more!</button>
+                            <p>Нуркање</p>
+                            <button class="card-but open" onclick="openPopup1()">Дознај повеќе!</button>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./img/aktivnosti_plivanje.webp" alt="fotografija od covek sto pliva">
+                        <img src="../img/aktivnosti_plivanje.webp" alt="фотографија од пливач">
                         <div class="card-title">
-                            <p>Swimming</p>
-                            <button class="card-but" onclick="openPopup2()">See more!</button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img
-                            src="./img/aktivnosti_velosipedizam.webp"
-                            alt="fotografija od covek na velosiped">
-                        <div class="card-title">
-                            <p>Mountain<br>biking</p>
-                            <button class="card-but" onclick="openPopup3()">See more!</button>
+                            <p>Пливање</p>
+                            <button class="card-but" onclick="openPopup2()">Дознај повеќе!</button>
                         </div>
                     </div>
                     <div class="card">
                         <img
-                            src="./img/aktivnosti_kajakarenje.webp"
-                            alt="fotografija od covek na kajak">
+                            src="../img/aktivnosti_velosipedizam.webp"
+                            alt="фотографија од човек на велосипед">
                         <div class="card-title">
-                            <p>Kayaking</p>
-                            <button class="card-but" onclick="openPopup4()">See more!</button>
+                            <p>Планински<br>велосипедизам</p>
+                            <button class="card-but" onclick="openPopup3()">Дознај повеќе!</button>
                         </div>
                     </div>
                     <div class="card">
                         <img
-                            src="./img/aktivnosti_gledanje_ptici.webp"
-                            alt="fotografija od covek nabluduva ptici">
+                            src="../img/aktivnosti_kajakarenje.webp"
+                            alt="фотографија од две девојки кои кајакарат низ езеро">
                         <div class="card-title">
-                            <p>Bird<br>watching</p>
-                            <button class="card-but" onclick="openPopup5()">See more!</button>
+                            <p>Кајакарење</p>
+                            <button class="card-but" onclick="openPopup4()">Дознај повеќе!</button>
                         </div>
                     </div>
                     <div class="card">
                         <img
-                            src="./img/aktivnosti_planinarenje.webp"
-                            alt="fotografija od covek sto planinari">
+                            src="../img/aktivnosti_gledanje_ptici.webp"
+                            alt="фотографија од двоглед и книга за птици">
                         <div class="card-title">
-                            <p>Hiking</p>
-                            <button class="card-but" onclick="openPopup6()">See more!</button>
+                            <p>Набљудување<br>птици</p>
+                            <button class="card-but" onclick="openPopup5()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="../img/aktivnosti_planinarenje.webp"
+                            alt="фотографија од човек кој планинари">
+                        <div class="card-title">
+                            <p>Планинарење</p>
+                            <button class="card-but" onclick="openPopup6()">Дознај повеќе!</button>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="quote">
                 <div>
-                    <h3>Inspirational<br>quote!</h3>
+                    <h3>Инспиративен<br>цитат!</h3>
                     <div class="divider"></div>
-                    <p>Nature is the art of God. - Dante Alighieri</p>
+                    <p>Природата е уметност божја. - Dante Alighieri</p>
                 </div>
             </section>
             <section class="cards">
                 <div class="card-head">
-                    <h2>Stay</h2>
-                    <a href="./en/stay.html">
-                        <button class="cards-but">Check out all stays!</button>
+                    <h2>Престој</h2>
+                    <a href="prestoj.html">
+                        <button class="cards-but">Види ги сите престои!</button>
                     </a>
                 </div>
                 <div class="card-body">
                     <div class="card">
-                        <img src="./img/prestoj_hotel.webp" alt="fotografija od hotelska soba">
+                        <img src="../img/prestoj_hotel.webp" alt="фотографија од хотелска соба">
                         <div class="card-title">
-                            <p>Hotel</p>
-                            <button class="card-but" onclick="openPopup11()">See more!</button>
+                            <p>Хотел</p>
+                            <button class="card-but" onclick="openPopup11()">Дознај повеќе!</button>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./img/prestoj_apartman.webp" alt="fotografija od apartman">
+                        <img src="../img/prestoj_apartman.webp" alt="фотографија од апартман">
                         <div class="card-title">
-                            <p>Apartment</p>
-                            <button class="card-but" onclick="openPopup12()">See more!</button>
+                            <p>Апартман</p>
+                            <button class="card-but" onclick="openPopup12()">Дознај повеќе!</button>
                         </div>
                     </div>
                     <div class="card">
                         <img
-                            src="./img/prestoj_planinarski_dom.webp"
-                            alt="fotografija od planinarski dom">
+                            src="../img/prestoj_planinarski_dom.webp"
+                            alt="фотографија од планинарски дом">
                         <div class="card-title">
-                            <p>Mountain cottage</p>
-                            <button class="card-but" onclick="openPopup13()">See more!</button>
+                            <p>Планински дом</p>
+                            <button class="card-but" onclick="openPopup13()">Дознај повеќе!</button>
                         </div>
                     </div>
                 </div>
@@ -262,7 +262,7 @@
             <section>
                 <div class="popup" id="popup-1">
                     <div class="pop-title">
-                        <h3>Activities - Diving</h3>
+                        <h3>Активности - Нуркање</h3>
                         <i id="close" class="fa-solid fa-xmark" onclick="closePopup1()"></i>
                         <div class="pop-content">
                             <p>Тука треба да има информации за нуркање</p>
@@ -271,7 +271,7 @@
                 </div>
                 <div class="popup" id="popup-2">
                     <div class="pop-title">
-                        <h3>Activities - Swimming</h3>
+                        <h3>Активности - Пливање</h3>
                         <i id="close" class="fa-solid fa-xmark" onclick="closePopup2()"></i>
                         <div class="pop-content">
                             <p>Тука треба да има информации за пливање</p>
@@ -280,7 +280,7 @@
                 </div>
                 <div class="popup" id="popup-3">
                     <div class="pop-title">
-                        <h3>Activities - Mountain biking</h3>
+                        <h3>Активности - Планински велосипедизам</h3>
                         <i id="close" class="fa-solid fa-xmark" onclick="closePopup3()"></i>
                         <div class="pop-content">
                             <p>Тука треба да има информации за планински велосипедизам</p>
@@ -289,7 +289,7 @@
                 </div>
                 <div class="popup" id="popup-4">
                     <div class="pop-title">
-                        <h3>Activities - Kayaking</h3>
+                        <h3>Активности - Кајакарење</h3>
                         <i id="close" class="fa-solid fa-xmark" onclick="closePopup4()"></i>
                         <div class="pop-content">
                             <p>Тука треба да има информации за кајакарење</p>
@@ -298,7 +298,7 @@
                 </div>
                 <div class="popup" id="popup-5">
                     <div class="pop-title">
-                        <h3>Activities - Bird watching</h3>
+                        <h3>Активности - Набљудување птици</h3>
                         <i id="close" class="fa-solid fa-xmark" onclick="closePopup5()"></i>
                         <div class="pop-content">
                             <p>Тука треба да има информации за набљудување птици</p>
@@ -307,7 +307,7 @@
                 </div>
                 <div class="popup" id="popup-6">
                     <div class="pop-title">
-                        <h3>Activities - Hiking</h3>
+                        <h3>Активности - Планинарење</h3>
                         <i id="close" class="fa-solid fa-xmark" onclick="closePopup6()"></i>
                         <div class="pop-content">
                             <p>Тука треба да има информации за планинарење</p>
@@ -316,7 +316,7 @@
                 </div>
                 <div class="popup" id="popup-11">
                     <div class="pop-title">
-                        <h3>Stay - Hotel</h3>
+                        <h3>Активности - Хотел</h3>
                         <i id="close" class="fa-solid fa-xmark" onclick="closePopup11()"></i>
                         <div class="pop-content">
                             <p>Тука треба да има информации за хотел</p>
@@ -325,7 +325,7 @@
                 </div>
                 <div class="popup" id="popup-12">
                     <div class="pop-title">
-                        <h3>Stay - Apartments</h3>
+                        <h3>Активности - Апартман</h3>
                         <i id="close" class="fa-solid fa-xmark" onclick="closePopup12()"></i>
                         <div class="pop-content">
                             <p>Тука треба да има информации за апартман</p>
@@ -334,7 +334,7 @@
                 </div>
                 <div class="popup" id="popup-13">
                     <div class="pop-title">
-                        <h3>Stay - Mountain cottage</h3>
+                        <h3>Активности - Планински дом</h3>
                         <i id="close" class="fa-solid fa-xmark" onclick="closePopup13()"></i>
                         <div class="pop-content">
                             <p>Тука треба да има информации за планински дом</p>
@@ -345,31 +345,31 @@
         </main>
         <footer>
             <div class="footer">
-                <a href="index.html"><img src="./img/logo.webp" alt="logo" width="175px"></a>
+                <a href="index.html"><img src="../img/logo.webp" alt="logo" width="175px"></a>
                 <i class="fa-solid fa-angle-up" id="arrow-top" onclick="scrolTop()"></i>
                 <nav>
                     <ul>
-                        <li><a href="./en/np-pelister.html">Pelister N.P.</a></li>
-                        <li><a href="./en/np-mavrovo.html">Mavrovo N.P.</a></li>
-                        <li><a href="./en/np-galicica.html">Galicica N.P.</a></li>
-                        <li><a href="./en/np-sarplanina.html">Shar Mountain N.P.</a></li>
+                        <li><a href="np-pelister.html">НП Пелистер</a></li>
+                        <li><a href="np-mavrovo.html">НП Маврово</a></li>
+                        <li><a href="np-galicica.html">НП Галичица</a></li>
+                        <li><a href="np-sarplanina.html">НП Шар Планина</a></li>
                     </ul>
                 </nav>
                 <nav>
                     <ul>
-                        <li><a class="active" href="index.html">Home</a></li>
-                        <li><a href="./en/activities.html">Activities</a></li>
-                        <li><a href="./en/stay.html">Stay</a></li>
+                        <li><a class="active" href="index.html">Дома</a></li>
+                        <li><a href="aktivnosti.html">Активности</a></li>
+                        <li><a href="prestoj.html">Престој</a></li>
                     </ul>
                 </nav>
                 <nav>
                     <ul>
-                        <li><a href="./en/about.html">About Us</a></li>
-                        <li><a href="./en/rules-of-conduct.html">Rules of Conduct</a></li>
+                        <li><a href="za-nas.html">За нас</a></li>
+                        <li><a href="pravila-na-odnesuvanje.html">Правила на однесување</a></li>
                     </ul>
                 </nav>
             </div>
-            <p class="copyright">© <script>document.write(new Date().getUTCFullYear());</script> All rights reserved.</p>
+            <p class="copyright">© <script>document.write(new Date().getUTCFullYear());</script> Сите права се задржани.</p>
         </footer>
     </body>
 </html>

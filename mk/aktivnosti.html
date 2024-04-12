@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="mk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <script src="../js/menu.js"></script>
+        <script src="../js/dropdown.js"></script>
+        <script src="../js/dropdown-menu.js"></script>
+        <script src="../js/popup.js"></script>
+        <title>Активности</title>
+    </head>
+    <body>
+        <header>
+            <section>
+                <a href="index.html"><img class="logo" src="../img/logo.webp" alt="Logo"></a>
+                <i id="openMenu" class="fa-solid fa-bars" onclick="openMenu()"></i>
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="index.html">Дома</a></li>
+                        <li class="dropdown-menu">
+                            <button class="dropbtn-menu" onclick="myFunctionM()">
+                                Паркови <i class="fa-solid fa-angle-down"></i></button>
+                            <div id="myDropdownM" class="drop-content-menu">
+                                <a href="np-pelister.html">Н.П. Пелистер</a>
+                                <a href="np-mavrovo.html">Н.П. Маврово</a>
+                                <a href="np-galicica.html">Н.П. Галичица</a>
+                                <a href="np-sarplanina.html">Н.П. Шар Планина</a>
+                            </div>
+                        </li>
+                        <li><a class="active" href="aktivnosti.html">Активности</a></li>
+                        <li><a href="prestoj.html">Престој</a></li>
+                        <li><a href="pravila-na-odnesuvanje.html">Правила на однесување</a></li>
+                        <li class="dropdown-flag">
+                            <button class="dropbtn-flag flag-1" onclick="myFunctionF()"></button>
+                            <div id="myDropdownF" class="drop-content-flag">
+                                <!-- <a href=""><div class="flag-2"></div></a> -->
+                                <a href="../en/activities.html"><div class="flag-3"></div></a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <nav id="mobMenu">
+                <i id="closeMenu" class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Дома</a></li>
+                    <li><a href="np-pelister.html">НП Пелистер</a></li>
+                    <li><a href="np-mavrovo.html">НП Маврово</a></li>
+                    <li><a href="np-galicica.html">НП Галичица</a></li>
+                    <li><a href="np-sarplanina.html">НП Шар Планина</a></li>
+                    <li><a class="active" href="aktivnosti.html">Активности</a></li>
+                    <li><a href="prestoj.html">Престој</a></li>
+                    <li><a href="pravila-na-odnesuvanje.html">Правила на однесување</a></li>
+                    <li><a href="za-nas.html">За нас</a></li>
+                    <li><a href="../en/activities.html"><div class="flag-3"></div></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <img class="bg" src="../img/pozadina.webp" alt="позадина">
+            <section class="hero-2">
+                <h1>АКТИВНОСТИ</h1>
+            </section>
+            <section class="cards">
+                <div class="card-head">
+                    <h2>Активности</h2>
+                </div>
+                <div class="card-body">
+                    <div class="card">
+                        <img src="../img/aktivnosti_nurkanje.webp" alt="фотографија од нуркач">
+                        <div class="card-title">
+                            <p>Нуркање</p>
+                            <button class="card-but" onclick="openPopup1()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/aktivnosti_plivanje.webp" alt="фотографија од пливач">
+                        <div class="card-title">
+                            <p>Пливање</p>
+                            <button class="card-but" onclick="openPopup2()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/aktivnosti_velosipedizam.webp" alt="фотографија од човек на велосипед">
+                        <div class="card-title">
+                            <p>Планински<br>велосипедизам</p>
+                            <button class="card-but" onclick="openPopup3()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/aktivnosti_kajakarenje.webp" alt="фотографија од две девојки кои кајакарат низ езеро">
+                        <div class="card-title">
+                            <p>Кајакарење</p>
+                            <button class="card-but" onclick="openPopup4()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/aktivnosti_gledanje_ptici.webp"
+                            alt="фотографија од двоглед и книга за птици">
+                        <div class="card-title">
+                            <p>Набљудување<br>птици</p>
+                            <button class="card-but" onclick="openPopup5()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/aktivnosti_planinarenje.webp"
+                            alt="фотографија од човек кој планинари">
+                        <div class="card-title">
+                            <p>Планинарење</p>
+                            <button class="card-but" onclick="openPopup6()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/aktivnosti_ribolov.webp" alt="фотографија од риболовец">
+                        <div class="card-title">
+                            <p>Риболов</p>
+                            <button class="card-but" onclick="openPopup7()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/aktivnosti_paraglajding.webp" alt="фотографија од параглајдер">
+                        <div class="card-title">
+                            <p>Спуштање со<br>параглајдер</p>
+                            <button class="card-but" onclick="openPopup8()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/aktivnosti_skijanje.webp" alt="фотографија од скијач">
+                        <div class="card-title">
+                            <p>Скијање</p>
+                            <button class="card-but" onclick="openPopup9()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/aktivnosti_javanje_konj.webp" alt="фотографија од човек кој јава коњ">
+                        <div class="card-title">
+                            <p>Јавање<br>коњ</p>
+                            <button class="card-but" onclick="openPopup10()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="popup" id="popup-1">
+                    <div class="pop-title">
+                        <h3>Активности - Нуркање</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup1()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за нуркање</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-2">
+                    <div class="pop-title">
+                        <h3>Активности - Пливање</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup2()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за пливање</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-3">
+                    <div class="pop-title">
+                        <h3>Активности - Планински велосипедизам</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup3()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за планински велосипедизам</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-4">
+                    <div class="pop-title">
+                        <h3>Активности - Кајакарење</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup4()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за кајакарење</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-5">
+                    <div class="pop-title">
+                        <h3>Активности - Набљудување птици</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup5()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за набљудување птици</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-6">
+                    <div class="pop-title">
+                        <h3>Активности - Планинарење</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup6()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за планинарење</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-7">
+                    <div class="pop-title">
+                        <h3>Активности - Риболов</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup7()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за риболов</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-8">
+                    <div class="pop-title">
+                        <h3>Активности - Спуштање со параглајдер</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup8()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за спуштање со параглајдер</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-9">
+                    <div class="pop-title">
+                        <h3>Активности - Скијање</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup9()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за скијање</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-10">
+                    <div class="pop-title">
+                        <h3>Активности - Јавање коњ</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup10()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за јавање коњ</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="quote">
+                <div>
+                    <h3>Инспиративен<br>цитат!</h3>
+                    <div class="divider"></div>
+                    <p>Прифатете го темпото на природата. Нејзината тајна е трпението. - Ralph Waldo
+                        Emersont</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <a href="index.html"><img src="../img/logo.webp" alt="logo" width="175px"></a>
+                <i class="fa-solid fa-angle-up" id="arrow-top" onclick="scrolTop()"></i>
+                <nav>
+                    <ul>
+                        <li><a href="np-pelister.html">НП Пелистер</a></li>
+                        <li><a href="np-mavrovo.html">НП Маврово</a></li>
+                        <li><a href="np-galicica.html">НП Галичица</a></li>
+                        <li><a href="np-sarplanina.html">НП Шар Планина</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Дома</a></li>
+                        <li><a class="active" href="aktivnosti.html">Активности</a></li>
+                        <li><a href="prestoj.html">Престој</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="za-nas.html">За нас</a></li>
+                        <li><a href="pravila-na-odnesuvanje.html">Правила на однесување</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="copyright">© <script>document.write(new Date().getUTCFullYear());</script> Сите права се задржани.</p>
+        </footer>
+    </body>
+</html>

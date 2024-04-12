@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="mk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <script src="../js/menu.js"></script>
+        <script src="../js/dropdown.js"></script>
+        <script src="../js/dropdown-menu.js"></script>
+        <script src="../js/popup.js"></script>
+        <title>Национален парк Шар Планина</title>
+    </head>
+    <body>
+        <header>
+            <section>
+                <a href="index.html"><img class="logo" src="../img/logo.webp" alt="Logo"></a>
+                <i id="openMenu" class="fa-solid fa-bars" onclick="openMenu()"></i>
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="index.html">Дома</a></li>
+                        <li class="dropdown-menu">
+                            <button class="dropbtn-menu" onclick="myFunctionM()">
+                                Паркови <i class="fa-solid fa-angle-down"></i></button>
+                            <div id="myDropdownM" class="drop-content-menu">
+                                <a href="np-pelister.html">Н.П. Пелистер</a>
+                                <a href="np-mavrovo.html">Н.П. Маврово</a>
+                                <a href="np-galicica.html">Н.П. Галичица</a>
+                                <a class="active" href="np-sarplanina.html">Н.П. Шар Планина</a>
+                            </div>
+                        </li>
+                        <li><a href="aktivnosti.html">Активности</a></li>
+                        <li><a href="prestoj.html">Престој</a></li>
+                        <li><a href="pravila-na-odnesuvanje.html">Правила на однесување</a></li>
+                        <li class="dropdown-flag">
+                            <button class="dropbtn-flag flag-1" onclick="myFunctionF()"></button>
+                            <div id="myDropdownF" class="drop-content-flag">
+                                <!-- <a href=""><div class="flag-2"></div></a> -->
+                                <a href="../en/np-sarplanina.html"><div class="flag-3"></div></a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <nav id="mobMenu">
+                <i id="closeMenu" class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Дома</a></li>
+                    <li><a href="np-pelister.html">НП Пелистер</a></li>
+                    <li><a href="np-mavrovo.html">НП Маврово</a></li>
+                    <li><a href="np-galicica.html">НП Галичица</a></li>
+                    <li><a class="active" href="np-sarplanina.html">НП Шар Планина</a></li>
+                    <li><a href="aktivnosti.html">Активности</a></li>
+                    <li><a href="prestoj.html">Престој</a></li>
+                    <li><a href="pravila-na-odnesuvanje.html">Правила на однесување</a></li>
+                    <li><a href="za-nas.html">За нас</a></li>
+                    <li><a href="../en/np-sarplanina.html"><div class="flag-3"></div></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <img class="bg" src="../img/pozadina.webp" alt="позадина">
+            <section class="hero-9">
+                <h1>НАЦИОНАЛЕН ПАРК ШАР ПЛАНИНА</h1>
+            </section>
+            <section class="links">
+                <a target="_blank" href="https://www.sarmountain.org.mk/">
+                    <i class="fa-solid fa-globe"></i>
+                    Н.П. Шар Планинa</a>
+                <a target="_blank" href="https://www.facebook.com/IPSharPlanina">
+                    <i class="fa-brands fa-facebook"></i>
+                    Facebook Н.П. Шар Планинa</a>
+            </section>
+            <section class="sec-text-photo">
+                <div>
+                    <h2>За паркот</h2>
+                </div>
+                <div class="text-photo">
+                    <div class="text">
+                        <p>Шар Планинa е голем високопланински масив кој се протега во пограничната област помеѓу Северна Македонија (56,25%), Косово (43,12%) и Албанија (0,63%). Подрачјето на Шар Планина се карактеризира со извонредни природни вредности и претставува европско жариште на биодиверзитет. По неколкудецениско чекање, на 30 јуни 2021 година, Собранието на РСМ прогласи дел од Шар Планина за Национален парк.</p>
+                        <p>За името на планината најмногу се верува дека потекнува од шаренилото кое се протега од најниските шуми и пасишта па се до високите врвови, особено во зимскиот период со тешките наноси на снег. </p>
+                        <p>Паркот се простира на површина од 62705 хектари и е богат со шуми, пасишта, глацијални езера, водотеци и разновидна геоморфологија. Регионот се одликува со високи планини чии врвови лесно надминуваат 2500 метри, додека највисок врв е Титов Врв кој се наоѓа на 2748 метри надморска височина.</p>
+                    </div>
+                    <div class="photo">
+                        <img src="../img/sar_planina-1.webp" alt="фотографија од колиба на шар планина">
+                    </div>
+                </div>
+            </section>
+            <section class="sec-text-photo">
+                <div>
+                    <h2>Флора</h2>
+                </div>
+                <div class="text-photo revers-photo">
+                    <div class="photo">
+                        <img src="../img/sar_planina-2.webp" alt="фотографија од дрвјата во шар планинската шума">
+                    </div>
+                    <div class="text">
+                        <p>Планината има интересна вегетација, која успева на висина од 1000 метри, шумите се простираат до 1700 метри надморска висина, а над нив се пасиштата, на површина од 550 км<sup>2</sup>. А пасиштата се дом на многубројни стада овци, од чие млеко се произведуваат висококвалитетни сирења.</p>
+                        <p>Во моментов познати се 662 видови дијатоми, 1260 видови васкуларни растенија, повеќе од 260 видови мов, 500 габи и 160 лишаи. Шумите во паркот се широколисни, иглолисни и мешани, 75% од нив се чисти шуми, најчесто букови или дабови. Покрај нив застапени се и: ела, костен, смрека, планински јавор, габер и ендемски видови како македонскиот бор, муника и планински јавор.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="quote">
+                <div>
+                    <h3>Инспиративен<br>цитат!</h3>
+                    <div class="divider"></div>
+                    <p>Природата не брза, но сè е постигнато. - Lao Tzu</p>
+                </div>
+            </section>
+            <section class="sec-text-photo">
+                <div>
+                    <h2>Фауна</h2>
+                </div>
+                <div class="text-photo">
+                    <div class="text">
+                        <p>Евидентирана е голема разновидност на безрбетници, односно 56 видови на мекотели и скоро 300 видови лажни скорпиони, пајаци и ракови. Досега се познати вкупно 1847 видови инсекти, од кои повеќе од 900 видови се пеперутки и 160 видови тврдокрилци.</p>
+                        <p>Во водните живеалишта потврдени се и 5 видови риби меѓу кои спаѓаат македонската и калифорниската пастрмка. Исто така во овие живеалишта постојат и 11 видови водоземци и 17 видови влекачи.</p>
+                        <p>Помеѓу копнените ‘рбетници можат да се забележат 128 видови птици, од кои најзастeпени се златниот орел, белоглав и египетски мршојадец, сив сокол итн. Застапени се и вкупно 51 вид цицачи како кафеавата мечка, балкански рис, дива мачка, видра, дива свиња, срна, волк, црвена лисица, дивокоза, јазовец и неколку видови куни.</p>
+                    </div>
+                    <div class="photo">
+                        <img src="../img/sar_planina-3.webp" alt="фотографија од орел">
+                    </div>
+                </div>
+            </section>
+            <section class="sec-text-photo">
+                <div>
+                    <h2>Хидрографија</h2>
+                </div>
+                <div class="text-photo revers-photo">
+                    <div class="photo">
+                        <img src="../img/sar_planina-4.webp" alt="фотографија од водопад">
+                    </div>
+                    <div class="text">
+                        <p>Подрачјето на Шар Планина се карактеризира со повеќе од 100 извори и 20 речни сливови, вклучувајќи ги и нивните главни водотеци и притоки, како и многу глацијални езера. Главните речни сливови се на реките Дуфска, Врутничка, Јеловјанска, Камењска, Уливеричка и реката Пена, и сите се влеваат во реката Вардар. Поголеми глацијални езера се Бозовачкото, Белото Езеро, Боговињското, Караниколичкото, Кривошишкото и Црното Езеро. Голем дел од реките стрмно се спуштаат, а некои од нив формираат впечатливи водопади.</p>
+                        <p>Уште во периодот од седумдесеттите години, реките на Шар Планина се користеле за производство на електрична енергија преку системот за собирање на водите наречен „Шарски Води“. Овој систем ја собира водата од голем број на реки и ја транспортира до акумулацијата Маврово и до хидроцентралите Вруток, Равен и Врбен.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="quote">
+                <div>
+                    <h3>Инспиративен<br>цитат!</h3>
+                    <div class="divider"></div>
+                    <p>Во поголемиот дел од историјата, човекот морал да се бори со природата за да преживее, во овој век тој почнува да сфаќа дека, за да преживее, мора да ја заштити. - Jacques-Yves Cousteau</p>
+                </div>
+            </section>
+            <section class="cards">
+                <div class="card-head">
+                    <h2>Активности</h2>
+                </div>
+                <div class="card-body">
+                    <div class="card">
+                        <img
+                            src="../img/aktivnosti_velosipedizam.webp"
+                            alt="фотографија од човек на велосипед">
+                        <div class="card-title">
+                            <p>Планински<br>велосипедизам</p>
+                            <button class="card-but" onclick="openPopup3()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="../img/aktivnosti_gledanje_ptici.webp"
+                            alt="фотографија од двоглед и книга за птици">
+                        <div class="card-title">
+                            <p>Набљудување<br>птици</p>
+                            <button class="card-but" onclick="openPopup5()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="../img/aktivnosti_planinarenje.webp"
+                            alt="фотографија од човек кој планинари">
+                        <div class="card-title">
+                            <p>Планинарење</p>
+                            <button class="card-but" onclick="openPopup6()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/aktivnosti_ribolov.webp" alt="фотографија од риболовец">
+                        <div class="card-title">
+                            <p>Риболов</p>
+                            <button class="card-but" onclick="openPopup7()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/aktivnosti_paraglajding.webp" alt="фотографија од параглајдер">
+                        <div class="card-title">
+                            <p>Спуштање со<br>параглајдер</p>
+                            <button class="card-but" onclick="openPopup8()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/aktivnosti_skijanje.webp" alt="фотографија од скијач">
+                        <div class="card-title">
+                            <p>Скијање</p>
+                            <button class="card-but" onclick="openPopup9()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cards">
+                <div class="card-head">
+                    <h2>Престој</h2>
+                </div>
+                <div class="card-body">
+                    <div class="card">
+                        <img src="../img/prestoj_hotel.webp" alt="фотографија од хотелска соба">
+                        <div class="card-title">
+                            <p>Хотел</p>
+                            <button class="card-but" onclick="openPopup11()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/prestoj_planinarski_dom.webp" alt="фотографија од планински дом">
+                        <div class="card-title">
+                            <p>Планински<br>дом</p>
+                            <button class="card-but" onclick="openPopup13()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/prestoj_kamp.webp" alt="фотографија од шатор">
+                        <div class="card-title">
+                            <p>Кампување</p>
+                            <button class="card-but" onclick="openPopup14()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="popup" id="popup-3">
+                    <div class="pop-title">
+                        <h3>Активности - Планински велосипедизам</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup3()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за планински велосипедизам</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-5">
+                    <div class="pop-title">
+                        <h3>Активности - Набљудување птици</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup5()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за набљудување птици</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-6">
+                    <div class="pop-title">
+                        <h3>Активности - Планинарење</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup6()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за планинарење</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-7">
+                    <div class="pop-title">
+                        <h3>Активности - Риболов</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup7()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за риболов</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-8">
+                    <div class="pop-title">
+                        <h3>Активности - Спуштање со параглајдер</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup8()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за спуштање со параглајдер</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-9">
+                    <div class="pop-title">
+                        <h3>Активности - Скијање</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup9()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за скијање</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-11">
+                    <div class="pop-title">
+                        <h3>Престој - Хотел</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup11()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за хотел</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-13">
+                    <div class="pop-title">
+                        <h3>Престој - Планински дом</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup13()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за планински дом</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-14">
+                    <div class="pop-title">
+                        <h3>Престој - Кампување</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup14()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за кампување</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main> 
+        <footer>
+            <div class="footer">
+                <a href="index.html"><img src="../img/logo.webp" alt="logo" width="175px"></a>
+                <i class="fa-solid fa-angle-up" id="arrow-top" onclick="scrolTop()"></i>
+                <nav>
+                    <ul>
+                        <li><a href="np-pelister.html">НП Пелистер</a></li>
+                        <li><a href="np-mavrovo.html">НП Маврово</a></li>
+                        <li><a href="np-galicica.html">НП Галичица</a></li>
+                        <li><a class="active" href="np-sarplanina.html">НП Шар Планина</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Дома</a></li>
+                        <li><a href="aktivnosti.html">Активности</a></li>
+                        <li><a href="prestoj.html">Престој</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="za-nas.html">За нас</a></li>
+                        <li><a href="pravila-na-odnesuvanje.html">Правила на однесување</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="copyright">© <script>document.write(new Date().getUTCFullYear());</script> Сите права се задржани.</p>
+        </footer>
+    </body>
+</html>

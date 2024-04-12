@@ -1,4 +1,7 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
     --primarna-color: rgb(0 172 103);
     --sekundarna-color: rgb(209 240 227);
     --akcent-color: rgb(174 45 99);
@@ -7,6 +10,9 @@ body {
     --white-color: #f1f1f1;
     --heading-font: 'Roboto Serif', serif;
     --text-font: 'Roboto', sans-serif;
+}
+
+body {
     padding: 0;
     margin: 0;
     font-family: var(--text-font);
@@ -40,7 +46,7 @@ header section {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 5px 20px;
+    padding: 3px 20px;
 }
 
 header nav ul {
@@ -52,53 +58,94 @@ header nav ul {
     margin: 0;
 }
 
-nav li:hover {
+nav li:hover, 
+.drop-content-menu a:hover, 
+.dropbtn-menu:hover {
     text-decoration-line: underline;
-    text-underline-offset: 3px;
+    text-underline-offset: 2px;
     text-decoration-thickness: 2px;
     text-decoration-color: var(--akcent-color);
     cursor: pointer;
 }
 
-.desktop-nav > ul > li > i {
-    font-size: 17px;
-    text-align: center;
-    vertical-align: middle;
-    padding-left: 2px;
-}
-
 .logo {
-    width: 90px;
+    width: 80px;
 }
 
-nav ul {
+nav ul, .dropbtn-menu {
     font-size: 12px;
     font-weight: 600;
     letter-spacing: .4px;
     text-transform: uppercase;
+    line-height: 80%;
+}
+
+nav ul {
+    line-height: 135%;
+}
+
+.dropbtn-menu {
+    border: none;
+    background: none;
+    padding: 0;
 }
 
 /* ------ dropdown parkovi ------ */
-.dropdown {
-    position: relative;
+#myDropdownM a {
+    padding: 0;
 }
-  
-.dropdown-content {
+
+.drop-content-menu,
+.drop-content-flag {
     display: none;
     position: absolute;
     background-color: var(--bg-overlay);
-    min-width: 160px;
     padding: 15px 20px;
+    margin-top: 17px;
+    text-wrap: nowrap;
+    right: 0px;
+    line-height: 170%;
 }
-  
-.dropdown-content a {
-    color: black;
-    text-decoration: none;
-    display: block;
-    line-height: 180%;
+
+.drop-content-flag {
+    margin-top: 12px;
 }
-  
-.dropdown:hover .dropdown-content {display: block;}
+
+.showF, .showM {display: grid;}
+
+/* ------ dropdown zname ------ */
+.dropbtn-flag {
+    border: none;
+    cursor: pointer;
+
+}
+
+.dropdown-menu,
+.dropdown-flag {
+    position: relative;
+}
+
+[class*="flag-"] {
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    vertical-align: middle;
+    width: 30px;
+    height: 18px;
+    background-repeat: no-repeat;
+}
+
+.flag-1 {
+    background-image: url(./img/zname_mkd.webp);
+}
+
+/* .flag-2 {
+    background-image: url(./img/zname_al.webp);
+} */
+
+.flag-3 {
+    background-image: url(./img/zname_uk.webp);
+}
 
 nav .active {
     color: var(--akcent-color);
@@ -142,7 +189,7 @@ footer nav ul li {
 
 /* ----- hero section ----- */
 [class*="hero-"] {
-    padding: 17.0%;
+    padding: 19.1%;
     background-size: cover;
     background-position: center;
     font-family: "Roboto Serif", serif;
@@ -150,6 +197,8 @@ footer nav ul li {
     text-align: center;
     font-size: 26px;
     letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: -50px;
 }
 
 .hero-1 {
@@ -204,15 +253,20 @@ footer nav ul li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 25px;
     text-align: left;
     width: 400px;
-    height: 300px;
-    padding: 20px;
-    background-color: var(--sekundarna-color);
+    height: auto;
+    padding: 20px 25px;
+    background-color: var(--bg-overlay);
     border-radius: 25px;
     font-size: 14px;
     letter-spacing: .3px;
     line-height: 140%;
+}
+
+.map-text p, .map-text h2 {
+    margin: 0;
 }
 
 svg {
@@ -373,7 +427,24 @@ svg {
     text-align: start;
     font-size: 14px;
     letter-spacing: .3px;
-    line-height: 130%;
+    line-height: 120%;
+}
+
+#avtorskiPrava h2 {
+    text-align: center;
+}
+
+.text-block a {
+    text-decoration: underline solid;
+}
+
+.text-block a:hover {
+    text-decoration: none;
+    color: var(--akcent-color);
+}
+
+.text-block li {
+    line-height: 160%;
 }
 
 /* ----- park links ----- */
@@ -470,9 +541,6 @@ svg {
     color: var(--akcent-color);
 }
 
-
-
-
 @media screen and (max-width: 970px) {
     .card-body {
         grid-template-columns: 1fr 1fr;
@@ -496,8 +564,8 @@ svg {
 
     #closeMenu {
         position: absolute;
-        top: 80px;
-        right: 80px;
+        top: 60px;
+        right: 50px;
         text-align: center;
         font-size: 28px;
         color: var(--primarna-color);

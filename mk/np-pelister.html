@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="mk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <script src="../js/menu.js"></script>
+        <script src="../js/dropdown.js"></script>
+        <script src="../js/dropdown-menu.js"></script>
+        <script src="../js/popup.js"></script>
+        <title>Национален парк Пелистер</title>
+    </head>
+    <body>
+        <header>
+            <section>
+                <a href="index.html"><img class="logo" src="../img/logo.webp" alt="Logo"></a>
+                <i id="openMenu" class="fa-solid fa-bars" onclick="openMenu()"></i>
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="index.html">Дома</a></li>
+                        <li class="dropdown-menu">
+                            <button class="dropbtn-menu" onclick="myFunctionM()">
+                                Паркови <i class="fa-solid fa-angle-down"></i></button>
+                            <div id="myDropdownM" class="drop-content-menu">
+                                <a class="active" href="np-pelister.html">Н.П. Пелистер</a>
+                                <a href="np-mavrovo.html">Н.П. Маврово</a>
+                                <a href="np-galicica.html">Н.П. Галичица</a>
+                                <a href="np-sarplanina.html">Н.П. Шар Планина</a>
+                            </div>
+                        </li>
+                        <li><a href="aktivnosti.html">Активности</a></li>
+                        <li><a href="prestoj.html">Престој</a></li>
+                        <li><a href="pravila-na-odnesuvanje.html">Правила на однесување</a></li>
+                        <li class="dropdown-flag">
+                            <button class="dropbtn-flag flag-1" onclick="myFunctionF()"></button>
+                            <div id="myDropdownF" class="drop-content-flag">
+                                <!-- <a href=""><div class="flag-2"></div></a> -->
+                                <a href="../en/np-pelister.html"><div class="flag-3"></div></a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <nav id="mobMenu">
+                <i id="closeMenu" class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Дома</a></li>
+                    <li><a class="active" href="np-pelister.html">НП Пелистер</a></li>
+                    <li><a href="np-mavrovo.html">НП Маврово</a></li>
+                    <li><a href="np-galicica.html">НП Галичица</a></li>
+                    <li><a href="np-sarplanina.html">НП Шар Планина</a></li>
+                    <li><a href="aktivnosti.html">Активности</a></li>
+                    <li><a href="prestoj.html">Престој</a></li>
+                    <li><a href="pravila-na-odnesuvanje.html">Правила на однесување</a></li>
+                    <li><a href="za-nas.html">За нас</a></li>
+                    <li><a href="../en/np-pelister.html"><div class="flag-3"></div></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <img class="bg" src="../img/pozadina.webp" alt="позадина">
+            <section class="hero-6">
+                <h1>НАЦИОНАЛЕН ПАРК ПЕЛИСТЕР</h1>
+            </section>
+            <section class="links">
+                <a target="_blank" href="https://park-pelister.com/">
+                    <i class="fa-solid fa-globe"></i>
+                    Н.П. Пелистер</a>
+                <a target="_blank" href="https://www.instagram.com/np.pelister/">
+                    <i class="fa-brands fa-square-instagram"></i>
+                    Instagram Н.П. Пелистер</a>
+                <a target="_blank" href="https://www.facebook.com/nppmk/">
+                    <i class="fa-brands fa-facebook"></i>
+                    Facebook Н.П. Пелистер</a>
+            </section>
+            <section class="sec-text-photo">
+                <div>
+                    <h2>За паркот</h2>
+                </div>
+                <div class="text-photo">
+                    <div class="text">
+                        <p>Националниот парк Пелистер беше прогласен со закон донесен од страна на Президиумот на Народна Република Македонија на 30 ноември 1948 година. Во месец декември 2007 година со посебен закон, дел од Планината Баба со врвот Пелистер повторно е прогласена за национален парк. Според Законот за заштита на природата, Јавната установа Национален парк Пелистер – Битола е одговорна за заштита и управување со паркот.</p>
+                        <p>Планината Баба, со врвот Пелистер се наоѓа на јужниот дел од Република Македонија и е со алпски карактеристики. Пелистер е поставен меѓу долините на Пелагонија и Преспа. Стар е околу 465 милиони години и е највисок врв во паркот, со 2.601 метри надморска височина.</p>
+                        <p>Постојат две легенди поврзани со името Пелистер.<br>Едни, велат дека името потекнува од грчкиот збор “peristeri” што значи гулаб, заради белосивиот камењар, кој кога го гледате од далечина заликува на гулаб.<br>Други, веруваат дека тоа е поради пет-игличестиот бор – петлистер (пет иглички – пет лисја), па од таму – Пелистер.</p>
+                    </div>
+                    <div class="photo">
+                        <img src="../img/pelister-1.webp" alt="фотографија од планината баба">
+                    </div>
+                </div>
+            </section>
+            <section class="sec-text-photo">
+                <div>
+                    <h2>Флора</h2>
+                </div>
+                <div class="text-photo revers-photo">
+                    <div class="photo">
+                        <img src="../img/pelister-2.webp" alt="фотографија од флората на баба">
+                    </div>
+                    <div class="text">
+                        <p>Флората во Националниот Парк Пелистер со своето бо­гат­ство, разновидност и колорит претставува една од најзна­чај­ните вредности на биолошката разновидност на оваа плани­на и го привлекува интересот на истражувачите, посетителите и вљубениците на најстариот и еден од најубавите национални паркови во РС Македонија. Флората на Пелистер сега брои 1307 таксони. Германскиот ботаничар Grisebach e првиот ботаничар која ја посетyва оваа планина (1839) и при тоа опишал неколку нови видови за науката, помеѓy кои и видот Pinus peuce Grisebach (молика), која претставува заштитен знак за Пелистер.</p>
+                        <p>На Пелистер растат 88 видови дрвја, што претставува застапеност на 29% од вкупната дендрофлора во Македонија. Најголем дел од шумските површини на Пелистер се под бука, а моликовите шуми (Рinиѕ реисе Grisebach) овде образуваат пространи и биолошки витални по­пу­лации во висинскиот распон од 700 – 2200 м. Останатите се мешовити шуми и тоа: моликово – елови, моликово – букови, моликово – буково – елови, буково – елови и буково – дабови шуми. Во вегетацијата на Пелистер се среќаваат 21 растителна заедница, од кои 8 се шумски (асоцијации и субасоцијации ), а 13 се тревни заедници.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="quote">
+                <div>
+                    <h3>Инспиративен<br>цитат!</h3>
+                    <div class="divider"></div>
+                    <p>Заминав на прошетка во шумата и излегов повисок од дрвјата. - Henry David Thoreau</p>
+                </div>
+            </section>
+            <section class="sec-text-photo">
+                <div>
+                    <h2>Фауна</h2>
+                </div>
+                <div class="text-photo">
+                    <div class="text">
+                        <p>Највпечатливи одлики на фауната во Националниот парк Пелистер се нејзината разновидност и хетерогеност, како и присуството на голем број реликтни и ендемични видови. Ендемичните видови се главно регистрирани кај без’рбетните групи на организми.</p>
+                        <p>Копнената (Терестичната) без’рбетна фауна на Пелистер покажува присуство на вкупно 288 таксони, кои припаѓаат на вкупно 10 групи без’рбетници.</p>
+                        <p>Од без’рбетните организми, во малото глацијално езеро “Мало Езеро” се среќава една раскошна популација од вилинското ракче Chirocephalus diaphanus carinatus, кое претставува балкански реликтно-ендемичен таксон. Исклучиво во големото глацијално езеро “Големо Езеро” живее амфиподното ракче Niphragus pancici peristericus, пелистерски ендемит, досега регистриран само во ова езеро.</p>
+                        <p>Само во водите на овие две глацијални езера, се среќава харпактикоидното ракче Arcticocampus macedonicus, пелистерски ендемичен вид.</p>
+                        <p>Во изворишните води на НП Пелистер, на надморска височина меѓу 1600 и 2200 м живеат два пелистерски реликтно-ендемични видови на остракоди: (Iliodromus peristericus и Eucypris diebeli).</p>
+                        <p>Во планинските потоци и реки на Националниот парк исто така се присутни реликтно-ендемични фаунистички елементи. Од Магаревска Река е опишана Mакедонската ендемична плекоптера Nemoura peristeri.</p>
+                        <p>Кај ‘рбетниците на Пелистер, покрај 2 видови на риба, констатирано е присуство на 12 видови водоземци, 16 вида влекачи, или 50% од диверзитетот на влекачи во РС Македонија, 116 видови птици, од кои 5 се исчезнати и 47 видови на цицачи. Четири таксони од цицачите, за прв пат се опишани од локалитети во рамките на Националниот парк: Балкански слеп крт (Talpa caeca beaucournii), типичен жител на моликовите шуми. Балкански крт (Talpa stankovici), опишан врз основа на примероци собрани од планинските ливади во Националниот парк. Македонска лисеста полјанка (Clethrionomys glareolus makedonicus), за прв пат регистрирана и опишана од листопадните и мешани шуми на Пелистер, исто така претставува македонски ендемит.</p>
+                    </div>
+                    <div class="photo">
+                        <img src="../img/pelister-3.webp" alt="фотографија од ракче">
+                        <img class="np-photo-1" src="../img/pelister-4.webp" alt="фотографија од балкански рис">
+                        <img class="np-photo-1" src="../img/pelister-5.webp" alt="фотографија од црвеноклуна галка">
+                    </div>
+                </div>
+            </section>
+            <section class="sec-text-photo">
+                <div>
+                    <h2>Хидрографија</h2>
+                </div>
+                <div class="text-photo revers-photo">
+                    <div class="photo">
+                        <img src="../img/pelister-6.webp" alt="фотографија од пелистерското големо езеро">
+                        <img class="np-photo-1" src="../img/pelister-7.webp" alt="фотографија од пелистерското мало езеро">
+                    </div>
+                    <div class="text">
+                        <p>Пелистер има развиена хидрографска мрежа, така што ова подрачје изобилува со извори, потоци и планински реки, а има и две глацијални езера.</p>
+                        <p>Пелистерскиот масив е испресечен со поголем број на живописни планински реки низ кои течат бистри и ладни води. Сите ја сочинуваат нивната исконска дивина во декорот на планинскиот пејсаж. Тие се украс на планината и го облагородуваат пејсажот низ кого протекуваат.</p>
+                        <p>Едни од водите течат кон Преспанското Езеро и припаѓаат на Јадранскиот слив, а други преку Пелагонија, на Егејскиот слив. Од високите планински била кон околните котлини се спуштаат 23 речни текови. Тие имаат изразит планински карактер. Најдолг водотек на Пелистер со должина од 46 км е реката Шемница.</p>
+                        <p>Од хидрографските објекти, со посебна привлечност се двете глацијални езера – Големото и Малото Езеро на Пелистер, познати како „Пелистерски Очи“.</p>
+                        <p>Големото Езеро лежи на надморска височина од 2218м. Toa е едно од највисоките глацијални езера во Македонија. Се протега во правецот север-југ. Зафаќа површина од 4.2 ха. Долго е 223 м, широко 162 м, со длабочина од 14.5 м.</p>
+                        <p>Малото Езеро лежи на 2180 м. н. в. Се наоѓа во изворишната челенка на Црвена Река. Долго е 79 м, широко 68 м, со длабочина од 2.6 м. Оддалечено е околу 2 км од Големото Езеро, во северозападен правец.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="quote">
+                <div>
+                    <h3>Инспиративен<br>цитат!</h3>
+                    <div class="divider"></div>
+                    <p>Ако еден начин е подобар од друг, може да бидете сигурни дека е 
+                        начинот на природата. - Aristotle</p>
+                </div>
+            </section>
+            <section class="cards">
+                <div class="card-head">
+                    <h2>Активности</h2>
+                </div>
+                <div class="card-body">
+                    <div class="card">
+                        <img
+                            src="../img/aktivnosti_velosipedizam.webp"
+                            alt="фотографија од човек на велосипед">
+                        <div class="card-title">
+                            <p>Планински<br>велосипедизам</p>
+                            <button class="card-but" onclick="openPopup3()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="../img/aktivnosti_gledanje_ptici.webp"
+                            alt="фотографија од двоглед и книга за птици">
+                        <div class="card-title">
+                            <p>Набљудување<br>птици</p>
+                            <button class="card-but" onclick="openPopup5()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="../img/aktivnosti_planinarenje.webp"
+                            alt="фотографија од човек кој планинари">
+                        <div class="card-title">
+                            <p>Планинарење</p>
+                            <button class="card-but" onclick="openPopup6()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/aktivnosti_ribolov.webp" alt="фотографија од риболовец">
+                        <div class="card-title">
+                            <p>Риболов</p>
+                            <button class="card-but" onclick="openPopup7()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/aktivnosti_paraglajding.webp" alt="фотографија од параглајдер">
+                        <div class="card-title">
+                            <p>Спуштање со<br>параглајдер</p>
+                            <button class="card-but" onclick="openPopup8()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/aktivnosti_skijanje.webp" alt="фотографија од скијач">
+                        <div class="card-title">
+                            <p>Скијање</p>
+                            <button class="card-but" onclick="openPopup9()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cards">
+                <div class="card-head">
+                    <h2>Престој</h2>
+                </div>
+                <div class="card-body">
+                    <div class="card">
+                        <img src="../img/prestoj_hotel.webp" alt="фотографија од хотелска соба">
+                        <div class="card-title">
+                            <p>Хотел</p>
+                            <button class="card-but" onclick="openPopup11()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/prestoj_planinarski_dom.webp" alt="фотографија од планинарски дом">
+                        <div class="card-title">
+                            <p>Планински<br>дом</p>
+                            <button class="card-but" onclick="openPopup13()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/prestoj_kamp.webp" alt="фотографија од шатор">
+                        <div class="card-title">
+                            <p>Кампување</p>
+                            <button class="card-but" onclick="openPopup14()">Дознај повеќе!</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="popup" id="popup-3">
+                    <div class="pop-title">
+                        <h3>Активности - Планински велосипедизам</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup3()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за планински велосипедизам</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-5">
+                    <div class="pop-title">
+                        <h3>Активности - Набљудување птици</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup5()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за набљудување птици</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-6">
+                    <div class="pop-title">
+                        <h3>Активности - Планинарење</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup6()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за планинарење</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-7">
+                    <div class="pop-title">
+                        <h3>Активности - Риболов</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup7()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за риболов</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-8">
+                    <div class="pop-title">
+                        <h3>Активности - Спуштање со параглајдер</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup8()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за спуштање со параглајдер</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-9">
+                    <div class="pop-title">
+                        <h3>Активности - Скијање</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup9()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за скијање</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-11">
+                    <div class="pop-title">
+                        <h3>Активности - Хотел</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup11()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за хотел</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-13">
+                    <div class="pop-title">
+                        <h3>Активности - Планински дом</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup13()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за планински дом</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-14">
+                    <div class="pop-title">
+                        <h3>Активности - Кампување</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup14()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за кампување</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main> 
+        <footer>
+            <div class="footer">
+                <a href="index.html"><img src="../img/logo.webp" alt="logo" width="175px"></a>
+                <i class="fa-solid fa-angle-up" id="arrow-top" onclick="scrolTop()"></i>
+                <nav>
+                    <ul>
+                        <li><a class="active" href="np-pelister.html">НП Пелистер</a></li>
+                        <li><a href="np-mavrovo.html">НП Маврово</a></li>
+                        <li><a href="np-galicica.html">НП Галичица</a></li>
+                        <li><a href="np-sarplanina.html">НП Шар Планина</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Дома</a></li>
+                        <li><a href="aktivnosti.html">Активности</a></li>
+                        <li><a href="prestoj.html">Престој</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="za-nas.html">За нас</a></li>
+                        <li><a href="pravila-na-odnesuvanje.html">Правила на однесување</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="copyright">© <script>document.write(new Date().getUTCFullYear());</script> Сите права се задржани.</p>
+        </footer>
+    </body>
+</html>

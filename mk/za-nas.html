@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="mk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <script src="../js/menu.js"></script>
+        <script src="../js/dropdown.js"></script>
+        <script src="../js/dropdown-menu.js"></script>
+        <script src="../js/popup.js"></script>
+        <title>За нас</title>
+    </head>
+    <body>
+        <header>
+            <section>
+                <a href="index.html"><img class="logo" src="../img/logo.webp" alt="Logo"></a>
+                <i id="openMenu" class="fa-solid fa-bars" onclick="openMenu()"></i>
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="index.html">Дома</a></li>
+                        <li class="dropdown-menu">
+                            <button class="dropbtn-menu" onclick="myFunctionM()">
+                                Паркови <i class="fa-solid fa-angle-down"></i></button>
+                            <div id="myDropdownM" class="drop-content-menu">
+                                <a href="np-pelister.html">Н.П. Пелистер</a>
+                                <a href="np-mavrovo.html">Н.П. Маврово</a>
+                                <a href="np-galicica.html">Н.П. Галичица</a>
+                                <a href="np-sarplanina.html">Н.П. Шар Планина</a>
+                            </div>
+                        </li>
+                        <li><a href="aktivnosti.html">Активности</a></li>
+                        <li><a href="prestoj.html">Престој</a></li>
+                        <li><a href="pravila-na-odnesuvanje.html">Правила на однесување</a></li>
+                        <li class="dropdown-flag">
+                            <button class="dropbtn-flag flag-1" onclick="myFunctionF()"></button>
+                            <div id="myDropdownF" class="drop-content-flag">
+                                <!-- <a href=""><div class="flag-2"></div></a> -->
+                                <a href="../en/about.html"><div class="flag-3"></div></a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <nav id="mobMenu">
+                <i id="closeMenu" class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                <ul>
+                    <li><a href="/">Дома</a></li>
+                    <li><a href="np-pelister.html">НП Пелистер</a></li>
+                    <li><a href="np-mavrovo.html">НП Маврово</a></li>
+                    <li><a href="np-galicica.html">НП Галичица</a></li>
+                    <li><a href="np-sarplanina.html">НП Шар Планина</a></li>
+                    <li><a href="aktivnosti.html">Активности</a></li>
+                    <li><a href="prestoj.html">Престој</a></li>
+                    <li><a href="pravila-na-odnesuvanje.html">Правила на однесување</a></li>
+                    <li><a class="active" href="za-nas.html">За нас</a></li>
+                    <li><a href="../en/about.html"><div class="flag-3"></div></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <img class="bg" src="../img/pozadina.webp" alt="позадина">
+            <section class="hero-5">
+                <h1>За нас</h1>
+            </section>
+            <section class="text-block">
+                <h3>Која е нашата мотивација?</h3>
+                <div>
+                    <p>
+                        Како големи љубители на природата и на технологијата, решивме да
+                        им прикажеме на нашите сограѓани, како и странците дека нашата мала Македонија
+                        има многу големи неоткриени убавини, кои вреди да се видат за сите да си
+                        наполнат очи и душа.
+                    </p>
+                </div>
+            </section>
+            <section class="text-block">
+                <h3>Порака од нас до вас!</h3>
+                <div>
+                    <p>Нашата порака ви ја испраќаме преку зборовите на американскиот писател Џон
+                        Бароуз:</p>
+                    <p id="zanas-citat">„Одам во природа за да бидам смирен и излечен и да ги средам 
+                        моите сетила.“</p>
+                </div>
+            </section>
+            <section id="avtorskiPrava">
+                <h2>Авторски права</h2>
+            </section>
+            <section class="text-block">
+                <h3>Дизајн и одржување</h3>
+                <p>Дизајн, изградба и одржување - <a target="_blank" href="https://sandraradeska.com">Сандра Радеска</a></p>
+                <a target="_blank" href="mailto: contat@sandraradeska.com">Ви треба вебсајт или сакате да стапите во контакт со Сандра? Кликнете тука!</a>
+                <p>Вебсајтот е креиран под менторство на <a href="https://fon.edu.mk/">АУЕ-ФОН Универзитет</a>.</p>
+            </section>
+            <section class="text-block">
+                <h3>Превземени фотографии</h3>
+                <ol>
+                    <li><a target="_blank" href="https://unsplash.com/@janesky">Antonio Janeski - unsplash.com</a></li>
+                    <li><a target="_blank" href="https://unsplash.com/@smalezan">Slavcho Malezanov - unsplash.com</a></li>
+                    <li><a target="_blank" href="https://unsplash.com/@stefzn">stefzn - unsplash.com</a></li>
+                    <li><a target="_blank" href="https://unsplash.com/@aarsoph">Kristijan Arsov - unsplash.com</a></li>
+                    <li><a target="_blank" href="https://unsplash.com/@nikola43">Nikola Mihajloski - unsplash.com</a></li>
+                    <li><a target="_blank" href="https://unsplash.com/@davidhenrichs">David Henrichs - unsplash.com></a></li>
+                    <li><a target="_blank" href="https://unsplash.com/@axelbrunst">Axel Brunst - unsplash.com</a></li>
+                    <li><a target="_blank" href="https://unsplash.com/@toddquackenbush">Todd Quackenbush - unsplash.com</a></li>
+                    <li><a target="_blank" href="https://unsplash.com/@eduardo_cg">Eduardo Casajus Gorostiaga - unsplash.com</a></li>
+                    <li><a target="_blank" href="https://unsplash.com/@dhelentjaris">Diane Helentjaris - unsplash.com</a></li>
+                    <li><a target="_blank" href="https://unsplash.com/@elsbethcat">Beth Macdonald - unsplash.com</a></li>
+                    <li><a target="_blank" href="https://unsplash.com/@jakemelara">Jake Melara - unsplash.com</a></li>
+                    <li><a target="_blank" href="https://unsplash.com/@_grey_">Greysen Johnson - unsplash.com</a></li>
+                    <li><a target="_blank" href="https://unsplash.com/@maarten_jpg">Maarten Duineveld - unsplash.com</a></li>
+                    <li><a target="_blank" href="https://unsplash.com/@chrishcush">Christian Bowen - unsplash.com</a></li>
+                    <li><a target="_blank" href="https://unsplash.com/@austinban">Austin Ban - unsplash.com</a></li>
+                </ol>
+            </section>
+            <section class="text-block">
+                <h3>Останати превземени содржини</h3>
+                <ol>
+                    <li><a target="_blank" href="https://parade.com/1034896/marynliles/nature-quotes/">Цитати</a></li>
+                    <li><a target="_blank" href="https://fontawesome.com/">Икони</a></li>
+                </ol>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <a href="index.html"><img src="../img/logo.webp" alt="Logo" width="175px"></a>
+                <i class="fa-solid fa-angle-up" id="arrow-top" onclick="scrolTop()"></i>
+                <nav>
+                    <ul>
+                        <li><a href="np-pelister.html">НП Пелистер</a></li>
+                        <li><a href="np-mavrovo.html">НП Маврово</a></li>
+                        <li><a href="np-galicica.html">НП Галичица</a></li>
+                        <li><a href="np-sarplanina.html">НП Шар Планина</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Дома</a></li>
+                        <li><a href="aktivnosti.html">Активности</a></li>
+                        <li><a href="prestoj.html">Престој</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a class="active" href="za-nas.html">За нас</a></li>
+                        <li><a href="pravila-na-odnesuvanje.html">Правила на однесување</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="copyright">© <script>document.write(new Date().getUTCFullYear());</script> Сите права се задржани.</p>
+        </footer>
+    </body>
+</html>

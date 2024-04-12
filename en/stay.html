@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <script src="../js/menu.js"></script>
+        <script src="../js/dropdown.js"></script>
+        <script src="../js/dropdown-menu.js"></script>
+        <script src="../js/popup.js"></script>
+        <title>Stay</title>
+    </head>
+    <body>
+        <header>
+            <section>
+                <a href="../index.html"><img class="logo" src="../img/logo.webp" alt="Logo"></a>
+                <i id="openMenu" class="fa-solid fa-bars" onclick="openMenu()"></i>
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li class="dropdown-menu">
+                            <button class="dropbtn-menu" onclick="myFunctionM()">
+                                Parks <i class="fa-solid fa-angle-down"></i></button>
+                            <div id="myDropdownM" class="drop-content-menu">
+                                <a href="np-pelister.html">Pelister N.P.</a>
+                                <a href="np-mavrovo.html">Mavrovo N.P.</a>
+                                <a href="np-galicica.html">Galicica N.P.</a>
+                                <a href="np-sarplanina.html">Shar Mountain N.P.</a>
+                            </div>
+                        </li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a class="active" href="stay.html">Stay</a></li>
+                        <li><a href="rules-of-conduct.html">Rules of Conduct</a></li>
+                        <li class="dropdown-flag">
+                            <button class="dropbtn-flag flag-3" onclick="myFunctionF()"></button>
+                            <div id="myDropdownF" class="drop-content-flag">
+                                <!-- <a href=""><div class="flag-2"></div></a> -->
+                                <a href="../mk/prestoj.html"><div class="flag-1"></div></a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <nav id="mobMenu">
+                <i id="closeMenu" class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="np-pelister.html">Pelister N.P.</a></li>
+                    <li><a href="np-mavrovo.html">Mavrovo N.P.</a></li>
+                    <li><a href="np-galicica.html">Galicica N.P.</a></li>
+                    <li><a href="np-sarplanina.html">Shar Mountain N.P.</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a class="active" href="stay.html">Stay</a></li>
+                    <li><a href="rules-of-conduct.html">Rules of Conduct</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="../mk/prestoj.html"><div class="flag-1"></div></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <img class="bg" src="../img/pozadina.webp" alt="">
+            <section class="hero-3">
+                <h1>STAY</h1>
+            </section>
+            <section class="cards">
+                <div class="card-head">
+                    <h2>Stay</h2>
+                </div>
+                <div class="card-body">
+                    <div class="card">
+                        <img src="../img/prestoj_hotel.webp" alt="hotel room">
+                        <div class="card-title">
+                            <p>Hotel</p>
+                            <button class="card-but" onclick="openPopup11()">See more!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/prestoj_apartman.webp" alt="apartment">
+                        <div class="card-title">
+                            <p>Apartment</p>
+                            <button class="card-but" onclick="openPopup12()">See more!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/prestoj_planinarski_dom.webp" alt="mountain cottage">
+                        <div class="card-title">
+                            <p>Mountain<br>cottage</p>
+                            <button class="card-but" onclick="openPopup13()">See more!</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../img/prestoj_kamp.webp" alt="camping">
+                        <div class="card-title">
+                            <p>Camping</p>
+                            <button class="card-but" onclick="openPopup14()">See more!</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="popup" id="popup-11">
+                    <div class="pop-title">
+                        <h3>Stay - Hotel</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup11()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за хотел</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-12">
+                    <div class="pop-title">
+                        <h3>Stay - Apartment</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup12()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за апартман</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-13">
+                    <div class="pop-title">
+                        <h3>Stay - Mountain cottage</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup13()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за планински дом</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-14">
+                    <div class="pop-title">
+                        <h3>Stay - Camping</h3>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closePopup14()"></i>
+                        <div class="pop-content">
+                            <p>Тука треба да има информации за кампување</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="quote">
+                <div>
+                    <h3>Inspirational<br>quote!</h3>
+                    <div class="divider"></div>
+                    <p>The richness I achieve comes from Nature, the source of my inspiration. - Claude Monet</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <a href="../index.html"><img src="../img/logo.webp" alt="logo" width="175px"></a>
+                <i class="fa-solid fa-angle-up" id="arrow-top" onclick="scrolTop()"></i>
+                <nav>
+                    <ul>
+                        <li><a href="np-pelister.html">Pelister N.P.</a></li>
+                        <li><a href="np-mavrovo.html">Mavrovo N.P.</a></li>
+                        <li><a href="np-galicica.html">Galicica N.P.</a></li>
+                        <li><a href="np-sarplanina.html">Shar Mountain N.P.</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a class="active" href="stay.html">Stay</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="rules-of-conduct.html">Rules of Conduct</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="copyright">© <script>document.write(new Date().getUTCFullYear());</script> All rights reserved.</p>
+        </footer>
+    </body>
+</html>
